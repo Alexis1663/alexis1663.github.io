@@ -663,6 +663,9 @@
                                 Envoyer le message
                             </button>
                         </form>
+                        <div id="success-msg" class="fixed top-16 inset-x-0 mx-auto mt-2 max-w-3xl px-6 py-4 bg-green-50 border-l-4 border-green-500 text-green-700 text-center rounded-lg shadow-lg transition-opacity duration-500 opacity-0 z-20">
+                            Votre message a bien été envoyé !
+                        </div>
                     </div>
                 </div>
             </div>
@@ -907,7 +910,16 @@
 
         emailjs.sendForm('service_sy65bki', 'template_b74jeab', this)
             .then(() => {
+                const successMsg = document.getElementById('success-msg');
+                // Affiche le message
+                successMsg.classList.replace('opacity-0', 'opacity-100');
+
                 this.reset();
+
+                // Masque après 4s
+                setTimeout(() => {
+                    successMsg.classList.replace('opacity-100', 'opacity-0');
+                }, 4000);
             }, (error) => {
             });
     });
