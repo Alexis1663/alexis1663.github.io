@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://acwebdigital.fr/sitemap.xml
