@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -135,7 +135,7 @@
         <div class="hidden md:flex space-x-8">
             <a class="hover:text-primary transition" href="#home">Accueil</a>
             <a class="hover:text-primary transition" href="#services">Services</a>
-            <a class="hover:text-primary transition" href="#work">Réalisations</a>
+<!--            <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
             <a class="hover:text-primary transition" href="#about">À propos</a>
             <a class="hover:text-primary transition" href="#contact">Contact</a>
         </div>
@@ -148,7 +148,7 @@
         <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
             <a class="hover:text-primary transition" href="#home">Accueil</a>
             <a class="hover:text-primary transition" href="#services">Services</a>
-            <a class="hover:text-primary transition" href="#work">Réalisations</a>
+<!--            <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
             <a class="hover:text-primary transition" href="#about">À propos</a>
             <a class="hover:text-primary transition" href="#contact">Contact</a>
         </div>
@@ -171,10 +171,10 @@
                        href="#contact">
                         Discutons de votre projet
                     </a>
-                    <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"
-                       href="#work">
-                        Voir mes réalisations
-                    </a>
+<!--                    <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"-->
+<!--                       href="#work">-->
+<!--                        Voir mes réalisations-->
+<!--                    </a>-->
                 </div>
             </div>
             <div class="hidden md:block md:w-1/2">
@@ -303,73 +303,82 @@
                     fidéliser vos visiteurs.
                 </p>
             </div>
+            <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
+                <div class="text-primary text-4xl mb-4">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Maintenance</h3>
+                <p class="text-gray-600">
+                    Corrections de bugs, ajustements graphiques, mises à jour techniques : je m’occupe de garder votre site performant, à jour et sécurisé dans le temps.
+                </p>
+            </div>
         </div>
     </div>
 </section>
 <!-- Work Section -->
-<section class="py-16" id="work">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Réalisations Récentes</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                Découvrez comment j'ai aidé mes clients à transformer leur présence en ligne et atteindre leurs
-                objectifs commerciaux.
-            </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="group">
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img alt="Site E-Commerce"
-                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
-                         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                        <h3 class="text-white text-xl font-bold">Site E-Commerce</h3>
-                        <p class="text-gray-200 mt-2">Boutique en ligne avec filtrage avancé et paiement sécurisé. +45%
-                            de taux de conversion.</p>
-                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="group">
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img alt="Site de Restaurant"
-                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
-                         src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                        <h3 class="text-white text-xl font-bold">Site de Restaurant</h3>
-                        <p class="text-gray-200 mt-2">Site responsive avec système de réservation en ligne. +60% de
-                            réservations mensuelles.</p>
-                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="group">
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img alt="Portfolio Photographe"
-                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"
-                         src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1974&amp;q=80"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
-                        <h3 class="text-white text-xl font-bold">Portfolio Photographe</h3>
-                        <p class="text-gray-200 mt-2">Portfolio créatif avec galerie interactive et formulaire de
-                            contact. +120% de demandes clients.</p>
-                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-12">
-            <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"
-               href="#">
-                Voir tous les projets
-            </a>
-        </div>
-    </div>
-</section>
+<!--<section class="py-16" id="work">-->
+<!--    <div class="container mx-auto px-6">-->
+<!--        <div class="text-center mb-16">-->
+<!--            <h2 class="text-3xl md:text-4xl font-bold mb-4">Réalisations Récentes</h2>-->
+<!--            <p class="text-gray-600 max-w-2xl mx-auto">-->
+<!--                Découvrez comment j'ai aidé mes clients à transformer leur présence en ligne et atteindre leurs-->
+<!--                objectifs commerciaux.-->
+<!--            </p>-->
+<!--        </div>-->
+<!--        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">-->
+<!--            &lt;!&ndash; Project 1 &ndash;&gt;-->
+<!--            <div class="group">-->
+<!--                <div class="relative overflow-hidden rounded-lg shadow-md">-->
+<!--                    <img alt="Site E-Commerce"-->
+<!--                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"-->
+<!--                         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80"/>-->
+<!--                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">-->
+<!--                        <h3 class="text-white text-xl font-bold">Site E-Commerce</h3>-->
+<!--                        <p class="text-gray-200 mt-2">Boutique en ligne avec filtrage avancé et paiement sécurisé. +45%-->
+<!--                            de taux de conversion.</p>-->
+<!--                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Project 2 &ndash;&gt;-->
+<!--            <div class="group">-->
+<!--                <div class="relative overflow-hidden rounded-lg shadow-md">-->
+<!--                    <img alt="Site de Restaurant"-->
+<!--                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"-->
+<!--                         src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80"/>-->
+<!--                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">-->
+<!--                        <h3 class="text-white text-xl font-bold">Site de Restaurant</h3>-->
+<!--                        <p class="text-gray-200 mt-2">Site responsive avec système de réservation en ligne. +60% de-->
+<!--                            réservations mensuelles.</p>-->
+<!--                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Project 3 &ndash;&gt;-->
+<!--            <div class="group">-->
+<!--                <div class="relative overflow-hidden rounded-lg shadow-md">-->
+<!--                    <img alt="Portfolio Photographe"-->
+<!--                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"-->
+<!--                         src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1974&amp;q=80"/>-->
+<!--                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">-->
+<!--                        <h3 class="text-white text-xl font-bold">Portfolio Photographe</h3>-->
+<!--                        <p class="text-gray-200 mt-2">Portfolio créatif avec galerie interactive et formulaire de-->
+<!--                            contact. +120% de demandes clients.</p>-->
+<!--                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="text-center mt-12">-->
+<!--            <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"-->
+<!--               href="#">-->
+<!--                Voir tous les projets-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!-- About Section -->
-<section class="py-16 bg-gray-100" id="about">
+<section class="py-16" id="about">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
@@ -437,179 +446,179 @@
     </div>
 </section>
 <!-- Testimonials Section with Carousel -->
-<section class="py-16">
-    <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ce que disent mes clients</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-                Ne vous fiez pas seulement à mes paroles. Découvrez comment mes solutions ont transformé l'activité de
-                mes clients.
-            </p>
-        </div>
-        <!-- Modern Carousel -->
-        <div class="flex justify-center">
-            <div class="relative mx-auto w-[90%:bug: fix CD auto:bug: fix CD auto]">
-                <!-- Carousel Controls - Now positioned outside the carousel -->
-                <button class="hidden md:absolute md:top-1/2 md:-left-12 md:-translate-y-1/2 md:bg-white md:text-primary md:w-10 md:h-10 md:rounded-full md:shadow-md md:flex md:items-center md:justify-center md:focus:outline-none md:hover:bg-primary md:hover:text-white md:transition md:z-10"
-                        id="prev-btn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="testimonial-carousel overflow-hidden">
-                    <div class="testimonial-track flex transition-transform duration-500 ease-out">
-                        <!-- Testimonial 1 -->
-                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                                <div class="text-yellow-400 flex mb-4">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="text-gray-600 mb-6 italic">
-                                    "Travailler avec ce développeur a été un vrai plaisir. Notre boutique en ligne a été
-                                    livrée dans les délais et le budget, avec des résultats qui ont dépassé toutes nos
-                                    attentes. Notre chiffre d'affaires a augmenté de 35% dès le premier mois !"
-                                </p>
-                                <div class="flex items-center mt-auto">
-                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
-                                        <img alt="Client" class="w-full h-full object-cover"
-                                             src="https://randomuser.me/api/portraits/women/44.jpg"/>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">Sarah Dupont</h4>
-                                        <p class="text-gray-500 text-sm">PDG, Boutique Mode</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                                <div class="text-yellow-400 flex mb-4">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="text-gray-600 mb-6 italic">
-                                    "Le trafic de notre site a augmenté de 150% après la refonte. L'attention aux détails et
-                                    l'accent mis sur l'expérience utilisateur ont vraiment porté leurs fruits. Notre taux de
-                                    conversion a doublé en seulement deux mois !"
-                                </p>
-                                <div class="flex items-center mt-auto">
-                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
-                                        <img alt="Client" class="w-full h-full object-cover"
-                                             src="https://randomuser.me/api/portraits/men/32.jpg"/>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">Michel Rodriguez</h4>
-                                        <p class="text-gray-500 text-sm">Directeur Marketing, Startup Tech</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 3 -->
-                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                                <div class="text-yellow-400 flex mb-4">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="text-gray-600 mb-6 italic">
-                                    "Non seulement il a créé un site magnifique, mais il a pris le temps de comprendre nos
-                                    objectifs commerciaux pour concevoir une solution qui nous aide à les atteindre. Nos
-                                    réservations en ligne ont triplé depuis le lancement !"
-                                </p>
-                                <div class="flex items-center mt-auto">
-                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
-                                        <img alt="Client" class="w-full h-full object-cover"
-                                             src="https://randomuser.me/api/portraits/women/68.jpg"/>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">Émilie Chen</h4>
-                                        <p class="text-gray-500 text-sm">Propriétaire, Restaurant Local</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 4 -->
-                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                                <div class="text-yellow-400 flex mb-4">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="flex flex-col justify-between">
+<!--<section class="py-16">-->
+<!--    <div class="container mx-auto px-6">-->
+<!--        <div class="text-center mb-16">-->
+<!--            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ce que disent mes clients</h2>-->
+<!--            <p class="text-gray-600 max-w-2xl mx-auto">-->
+<!--                Ne vous fiez pas seulement à mes paroles. Découvrez comment mes solutions ont transformé l'activité de-->
+<!--                mes clients.-->
+<!--            </p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Modern Carousel &ndash;&gt;-->
+<!--        <div class="flex justify-center">-->
+<!--            <div class="relative mx-auto w-[90%:bug: fix CD auto:bug: fix CD auto]">-->
+<!--                &lt;!&ndash; Carousel Controls - Now positioned outside the carousel &ndash;&gt;-->
+<!--                <button class="hidden md:absolute md:top-1/2 md:-left-12 md:-translate-y-1/2 md:bg-white md:text-primary md:w-10 md:h-10 md:rounded-full md:shadow-md md:flex md:items-center md:justify-center md:focus:outline-none md:hover:bg-primary md:hover:text-white md:transition md:z-10"-->
+<!--                        id="prev-btn">-->
+<!--                    <i class="fas fa-chevron-left"></i>-->
+<!--                </button>-->
+<!--                <div class="testimonial-carousel overflow-hidden">-->
+<!--                    <div class="testimonial-track flex transition-transform duration-500 ease-out">-->
+<!--                        &lt;!&ndash; Testimonial 1 &ndash;&gt;-->
+<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
+<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
+<!--                                <div class="text-yellow-400 flex mb-4">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </div>-->
+<!--                                <p class="text-gray-600 mb-6 italic">-->
+<!--                                    "Travailler avec ce développeur a été un vrai plaisir. Notre boutique en ligne a été-->
+<!--                                    livrée dans les délais et le budget, avec des résultats qui ont dépassé toutes nos-->
+<!--                                    attentes. Notre chiffre d'affaires a augmenté de 35% dès le premier mois !"-->
+<!--                                </p>-->
+<!--                                <div class="flex items-center mt-auto">-->
+<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
+<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
+<!--                                             src="https://randomuser.me/api/portraits/women/44.jpg"/>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <h4 class="font-bold">Sarah Dupont</h4>-->
+<!--                                        <p class="text-gray-500 text-sm">PDG, Boutique Mode</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Testimonial 2 &ndash;&gt;-->
+<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
+<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
+<!--                                <div class="text-yellow-400 flex mb-4">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </div>-->
+<!--                                <p class="text-gray-600 mb-6 italic">-->
+<!--                                    "Le trafic de notre site a augmenté de 150% après la refonte. L'attention aux détails et-->
+<!--                                    l'accent mis sur l'expérience utilisateur ont vraiment porté leurs fruits. Notre taux de-->
+<!--                                    conversion a doublé en seulement deux mois !"-->
+<!--                                </p>-->
+<!--                                <div class="flex items-center mt-auto">-->
+<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
+<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
+<!--                                             src="https://randomuser.me/api/portraits/men/32.jpg"/>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <h4 class="font-bold">Michel Rodriguez</h4>-->
+<!--                                        <p class="text-gray-500 text-sm">Directeur Marketing, Startup Tech</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Testimonial 3 &ndash;&gt;-->
+<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
+<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
+<!--                                <div class="text-yellow-400 flex mb-4">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </div>-->
+<!--                                <p class="text-gray-600 mb-6 italic">-->
+<!--                                    "Non seulement il a créé un site magnifique, mais il a pris le temps de comprendre nos-->
+<!--                                    objectifs commerciaux pour concevoir une solution qui nous aide à les atteindre. Nos-->
+<!--                                    réservations en ligne ont triplé depuis le lancement !"-->
+<!--                                </p>-->
+<!--                                <div class="flex items-center mt-auto">-->
+<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
+<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
+<!--                                             src="https://randomuser.me/api/portraits/women/68.jpg"/>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <h4 class="font-bold">Émilie Chen</h4>-->
+<!--                                        <p class="text-gray-500 text-sm">Propriétaire, Restaurant Local</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Testimonial 4 &ndash;&gt;-->
+<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
+<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
+<!--                                <div class="text-yellow-400 flex mb-4">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </div>-->
+<!--                                <div class="flex flex-col justify-between">-->
 
-                                </div>
-                                <p class="text-gray-600 mb-6 italic">
-                                    "L'expertise en design responsive a garanti que notre site soit parfait sur tous les
-                                    appareils. Nous avons reçu de nombreux compliments sur l'expérience utilisateur et notre
-                                    taux de rebond a diminué de 40% !"
-                                </p>
-                                <div class="flex items-center mt-auto">
-                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
-                                        <img alt="Client" class="w-full h-full object-cover"
-                                             src="https://randomuser.me/api/portraits/men/75.jpg"/>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">David Wilson</h4>
-                                        <p class="text-gray-500 text-sm">Fondateur, Agence Digitale</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 5 -->
-                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">
-                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">
-                                <div class="text-yellow-400 flex mb-4">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="text-gray-600 mb-6 italic">
-                                    "Collaborer avec ce développeur a transformé notre présence en ligne. Il a été réactif,
-                                    professionnel, et a livré exactement ce dont nous avions besoin. Notre visibilité sur
-                                    Google s'est améliorée de 200% !"
-                                </p>
-                                <div class="flex items-center mt-auto">
-                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">
-                                        <img alt="Client" class="w-full h-full object-cover"
-                                             src="https://randomuser.me/api/portraits/women/90.jpg"/>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-bold">Jessica Martinez</h4>
-                                        <p class="text-gray-500 text-sm">Directrice, Santé &amp; Bien-être</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="hidden md:absolute md:top-1/2 md:-right-12 md:-translate-y-1/2 md:bg-white md:text-primary md:w-10 md:h-10 md:rounded-full md:shadow-md md:flex md:items-center md:justify-center md:focus:outline-none md:hover:bg-primary md:hover:text-white md:transition md:z-10"
-                        id="next-btn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                <!-- Carousel Indicators -->
-                <div class="flex justify-center mt-8 space-x-2" id="carousel-indicators">
-                    <!-- Indicators will be added by JavaScript -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!--                                </div>-->
+<!--                                <p class="text-gray-600 mb-6 italic">-->
+<!--                                    "L'expertise en design responsive a garanti que notre site soit parfait sur tous les-->
+<!--                                    appareils. Nous avons reçu de nombreux compliments sur l'expérience utilisateur et notre-->
+<!--                                    taux de rebond a diminué de 40% !"-->
+<!--                                </p>-->
+<!--                                <div class="flex items-center mt-auto">-->
+<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
+<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
+<!--                                             src="https://randomuser.me/api/portraits/men/75.jpg"/>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <h4 class="font-bold">David Wilson</h4>-->
+<!--                                        <p class="text-gray-500 text-sm">Fondateur, Agence Digitale</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Testimonial 5 &ndash;&gt;-->
+<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
+<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
+<!--                                <div class="text-yellow-400 flex mb-4">-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                    <i class="fas fa-star"></i>-->
+<!--                                </div>-->
+<!--                                <p class="text-gray-600 mb-6 italic">-->
+<!--                                    "Collaborer avec ce développeur a transformé notre présence en ligne. Il a été réactif,-->
+<!--                                    professionnel, et a livré exactement ce dont nous avions besoin. Notre visibilité sur-->
+<!--                                    Google s'est améliorée de 200% !"-->
+<!--                                </p>-->
+<!--                                <div class="flex items-center mt-auto">-->
+<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
+<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
+<!--                                             src="https://randomuser.me/api/portraits/women/90.jpg"/>-->
+<!--                                    </div>-->
+<!--                                    <div>-->
+<!--                                        <h4 class="font-bold">Jessica Martinez</h4>-->
+<!--                                        <p class="text-gray-500 text-sm">Directrice, Santé &amp; Bien-être</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <button class="hidden md:absolute md:top-1/2 md:-right-12 md:-translate-y-1/2 md:bg-white md:text-primary md:w-10 md:h-10 md:rounded-full md:shadow-md md:flex md:items-center md:justify-center md:focus:outline-none md:hover:bg-primary md:hover:text-white md:transition md:z-10"-->
+<!--                        id="next-btn">-->
+<!--                    <i class="fas fa-chevron-right"></i>-->
+<!--                </button>-->
+<!--                &lt;!&ndash; Carousel Indicators &ndash;&gt;-->
+<!--                <div class="flex justify-center mt-8 space-x-2" id="carousel-indicators">-->
+<!--                    &lt;!&ndash; Indicators will be added by JavaScript &ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!-- Contact Section -->
-<section class="py-16 bg-gray-100" id="contact">
+<section class="py-16  bg-gray-100" id="contact">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactez-moi</h2>
@@ -624,27 +633,27 @@
                     <div class="p-8">
                         <form id="contact-form">
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2" for="lastname">Votre Nom</label>
+                                <label class="block text-gray-700" for="lastname">Nom</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                                        id="lastname" name="lastname" type="text"/>
                             </div>
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2" for="firstname">Votre Nom</label>
+                                <label class="block text-gray-700" for="firstname">Prénom</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                                        id="firstname" name="firstname" type="text"/>
                             </div>
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2" for="email">Votre Email</label>
+                                <label class="block text-gray-700" for="email">Email</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                                        id="email" name="email" type="email"/>
                             </div>
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2" for="subject">Sujet</label>
+                                <label class="block text-gray-700" for="subject">Sujet</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                                        id="subject" name="subject" type="text"/>
                             </div>
                             <div class="mb-6">
-                                <label class="block text-gray-700 mb-2" for="message">Votre Message</label>
+                                <label class="block text-gray-700" for="message">Votre Message</label>
                                 <textarea
                                         class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                                         id="message" name="message" rows="4"></textarea>
@@ -684,14 +693,14 @@
                 <p class="mt-2 text-gray-400">Créateur d'expériences web exceptionnelles.</p>
                 <p class="mt-1 text-gray-400">Création de sites internet, SEO, design responsive et accompagnement digital sur mesure.</p>
                 <p class="mt-1 text-gray-400">
-                    J'interviens auprès des entreprises de l’agglomération clermontoise (Clermont‑Ferrand, Riom, Cournon‑d’Auvergne, Issoire…)
+                    J'interviens auprès des entreprises de l’agglomération clermontoise (Clermont‑Ferrand, Aubière, Riom, Cournon‑d’Auvergne, Issoire…)
                     et de la métropole lyonnaise (Lyon, Villeurbanne, Vénissieux, Tassin‑la‑Demi‑Lune…) ainsi que dans tout le Puy‑de‑Dôme (63).
                 </p>
             </div>
             <nav class="md:w-1/3 grid grid-cols-2 gap-4 text-lg">
                 <a class="hover:text-primary transition" href="#home">Accueil</a>
                 <a class="hover:text-primary transition" href="#services">Services</a>
-                <a class="hover:text-primary transition" href="#work">Réalisations</a>
+<!--                <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
                 <a class="hover:text-primary transition" href="#about">À propos</a>
                 <a class="hover:text-primary transition" href="#contact">Contact</a>
                 <a class="hover:text-primary transition" href="mailto:contact@acwebdigital.fr">Contactez‑moi</a>
@@ -750,138 +759,138 @@
 
     // Testimonial Carousel
     document.addEventListener('DOMContentLoaded', function () {
-        const track = document.querySelector('.testimonial-track');
-        const slides = document.querySelectorAll('.testimonial-slide');
-        const nextButton = document.getElementById('next-btn');
-        const prevButton = document.getElementById('prev-btn');
-        const indicatorsContainer = document.getElementById('carousel-indicators');
-
-        let currentIndex = 0;
-        let slideWidth;
-        let slidesToShow;
-        let totalPages;
-
-        // Calculate slides to show based on screen size
-        function calculateSlidesToShow() {
-            if (window.innerWidth >= 1024) {
-                return 3; // Large screens
-            } else if (window.innerWidth >= 768) {
-                return 2; // Medium screens
-            } else {
-                return 1; // Small screens
-            }
-        }
-
-        // Initialize carousel
-        function initCarousel() {
-            slidesToShow = calculateSlidesToShow();
-            slideWidth = 100 / slidesToShow;
-            totalPages = Math.ceil((slides.length - slidesToShow + 1) / 1);
-
-            // Set width of slides
-            slides.forEach(slide => {
-                slide.style.minWidth = `${slideWidth}%`;
-            });
-
-            // Clear existing indicators
-            indicatorsContainer.innerHTML = '';
-
-            // Create indicators based on total pages
-            for (let i = 0; i < totalPages; i++) {
-                const indicator = document.createElement('button');
-                indicator.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300');
-                indicator.setAttribute('aria-label', `Go to slide ${i + 1}`);
-                indicator.addEventListener('click', () => goToSlide(i));
-                indicatorsContainer.appendChild(indicator);
-            }
-
-            goToSlide(0);
-        }
-
-        // Go to specific slide
-        function goToSlide(index) {
-            if (index < 0) {
-                index = totalPages - 1;
-            } else if (index >= totalPages) {
-                index = 0;
-            }
-
-            currentIndex = index;
-            const offset = -currentIndex * slideWidth;
-            track.style.transform = `translateX(${offset}%)`;
-            updateIndicators();
-        }
-
-        // Set active indicator
-        function updateIndicators() {
-            const indicators = indicatorsContainer.querySelectorAll('button');
-            indicators.forEach((indicator, index) => {
-                if (index === currentIndex) {
-                    indicator.classList.remove('bg-gray-300');
-                    indicator.classList.add('bg-primary');
-                } else {
-                    indicator.classList.remove('bg-primary');
-                    indicator.classList.add('bg-gray-300');
-                }
-            });
-        }
-
-        // Event listeners
-        nextButton.addEventListener('click', () => goToSlide(currentIndex + 1));
-        prevButton.addEventListener('click', () => goToSlide(currentIndex - 1));
-
-        // Handle touch events for mobile swipe
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        track.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-
-        track.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            const swipeThreshold = 50;
-            if (touchEndX < touchStartX - swipeThreshold) {
-                // Swipe left
-                goToSlide(currentIndex + 1);
-            } else if (touchEndX > touchStartX + swipeThreshold) {
-                // Swipe right
-                goToSlide(currentIndex - 1);
-            }
-        }
-
-        // Auto-advance slides
-        let autoplayInterval;
-
-        function startAutoplay() {
-            autoplayInterval = setInterval(() => {
-                goToSlide(currentIndex + 1);
-            }, 5000);
-        }
-
-        function stopAutoplay() {
-            clearInterval(autoplayInterval);
-        }
-
-        // Pause autoplay on hover
-        const carousel = document.querySelector('.testimonial-carousel');
-        carousel.addEventListener('mouseenter', stopAutoplay);
-        carousel.addEventListener('mouseleave', startAutoplay);
-
-        // Initialize carousel and start autoplay
-        initCarousel();
-        startAutoplay();
-
-        // Recalculate on window resize
-        window.addEventListener('resize', () => {
-            stopAutoplay();
-            initCarousel();
-            startAutoplay();
-        });
+        // const track = document.querySelector('.testimonial-track');
+        // const slides = document.querySelectorAll('.testimonial-slide');
+        // const nextButton = document.getElementById('next-btn');
+        // const prevButton = document.getElementById('prev-btn');
+        // const indicatorsContainer = document.getElementById('carousel-indicators');
+        //
+        // let currentIndex = 0;
+        // let slideWidth;
+        // let slidesToShow;
+        // let totalPages;
+        //
+        // // Calculate slides to show based on screen size
+        // function calculateSlidesToShow() {
+        //     if (window.innerWidth >= 1024) {
+        //         return 3; // Large screens
+        //     } else if (window.innerWidth >= 768) {
+        //         return 2; // Medium screens
+        //     } else {
+        //         return 1; // Small screens
+        //     }
+        // }
+        //
+        // // Initialize carousel
+        // function initCarousel() {
+        //     slidesToShow = calculateSlidesToShow();
+        //     slideWidth = 100 / slidesToShow;
+        //     totalPages = Math.ceil((slides.length - slidesToShow + 1) / 1);
+        //
+        //     // Set width of slides
+        //     slides.forEach(slide => {
+        //         slide.style.minWidth = `${slideWidth}%`;
+        //     });
+        //
+        //     // Clear existing indicators
+        //     indicatorsContainer.innerHTML = '';
+        //
+        //     // Create indicators based on total pages
+        //     for (let i = 0; i < totalPages; i++) {
+        //         const indicator = document.createElement('button');
+        //         indicator.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300');
+        //         indicator.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        //         indicator.addEventListener('click', () => goToSlide(i));
+        //         indicatorsContainer.appendChild(indicator);
+        //     }
+        //
+        //     goToSlide(0);
+        // }
+        //
+        // // Go to specific slide
+        // function goToSlide(index) {
+        //     if (index < 0) {
+        //         index = totalPages - 1;
+        //     } else if (index >= totalPages) {
+        //         index = 0;
+        //     }
+        //
+        //     currentIndex = index;
+        //     const offset = -currentIndex * slideWidth;
+        //     track.style.transform = `translateX(${offset}%)`;
+        //     updateIndicators();
+        // }
+        //
+        // // Set active indicator
+        // function updateIndicators() {
+        //     const indicators = indicatorsContainer.querySelectorAll('button');
+        //     indicators.forEach((indicator, index) => {
+        //         if (index === currentIndex) {
+        //             indicator.classList.remove('bg-gray-300');
+        //             indicator.classList.add('bg-primary');
+        //         } else {
+        //             indicator.classList.remove('bg-primary');
+        //             indicator.classList.add('bg-gray-300');
+        //         }
+        //     });
+        // }
+        //
+        // // Event listeners
+        // nextButton.addEventListener('click', () => goToSlide(currentIndex + 1));
+        // prevButton.addEventListener('click', () => goToSlide(currentIndex - 1));
+        //
+        // // Handle touch events for mobile swipe
+        // let touchStartX = 0;
+        // let touchEndX = 0;
+        //
+        // track.addEventListener('touchstart', e => {
+        //     touchStartX = e.changedTouches[0].screenX;
+        // });
+        //
+        // track.addEventListener('touchend', e => {
+        //     touchEndX = e.changedTouches[0].screenX;
+        //     handleSwipe();
+        // });
+        //
+        // function handleSwipe() {
+        //     const swipeThreshold = 50;
+        //     if (touchEndX < touchStartX - swipeThreshold) {
+        //         // Swipe left
+        //         goToSlide(currentIndex + 1);
+        //     } else if (touchEndX > touchStartX + swipeThreshold) {
+        //         // Swipe right
+        //         goToSlide(currentIndex - 1);
+        //     }
+        // }
+        //
+        // // Auto-advance slides
+        // let autoplayInterval;
+        //
+        // function startAutoplay() {
+        //     autoplayInterval = setInterval(() => {
+        //         goToSlide(currentIndex + 1);
+        //     }, 5000);
+        // }
+        //
+        // function stopAutoplay() {
+        //     clearInterval(autoplayInterval);
+        // }
+        //
+        // // Pause autoplay on hover
+        // const carousel = document.querySelector('.testimonial-carousel');
+        // carousel.addEventListener('mouseenter', stopAutoplay);
+        // carousel.addEventListener('mouseleave', startAutoplay);
+        //
+        // // Initialize carousel and start autoplay
+        // initCarousel();
+        // startAutoplay();
+        //
+        // // Recalculate on window resize
+        // window.addEventListener('resize', () => {
+        //     stopAutoplay();
+        //     initCarousel();
+        //     startAutoplay();
+        // });
 
         // Manage the year of the website's copyright
         const now = new Date().getFullYear();
