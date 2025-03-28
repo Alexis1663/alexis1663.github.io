@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Développeur Web Freelance Clermont‑Ferrand & Lyon | ACWebDigital</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <title>Alexis CARREAU | Développeur Web Freelance Clermont‑Ferrand</title>
     <meta name="description" content="Développeur web freelance intervenant auprès des entreprises de Clermont‑Ferrand, Riom, Lyon et Villeurbanne. Création de sites sur mesure, SEO, transition numérique et design responsive."/>
     <link rel="canonical" href="https://www.acwebdigital.fr/"/>
     <meta name="robots" content="index, follow"/>
@@ -24,6 +26,7 @@
     <link rel="manifest" href="./assets/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="./assets/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <!-- OpenGraph / Facebook -->
@@ -44,8 +47,7 @@
 
     <!-- Tailwind + FontAwesome + Cloudflare -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -400,8 +402,8 @@
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
-                <img alt="À propos de moi" class="rounded-lg shadow-lg mx-auto w-full max-w-md"
-                     src="./assets/about.jpg"/>
+                <img loading="lazy" alt="À propos de moi" class="rounded-lg shadow-lg mx-auto w-full max-w-md"
+                     src="./assets/about.webp"/>
             </div>
             <div class="md:w-1/2 md:pl-12">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">À Propos de Moi</h2>
@@ -733,7 +735,7 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+<script defer src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
 <script>
     // Mobile menu toggle
     document.getElementById('menu-button').addEventListener('click', function () {
