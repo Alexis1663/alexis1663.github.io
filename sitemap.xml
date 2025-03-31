@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://acwebdigital.fr/</loc>
-  <lastmod>2025-03-27T15:47:14+00:00</lastmod>
-</url>
-
-
+  <url>
+    <loc>https://acwebdigital.fr/</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/5-etapes-creation-site-web-professionnel-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/angular-vs-react-meilleur-choix-entreprises-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/audit-site-web-entreprises-puy-de-dome.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/avantages-site-web-responsive-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/index.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/optimisation-seo-local-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/pourquoi-choisir-developpeur-web-freelance-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/refonte-site-web-entreprise-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/strategie-contenu-site-web-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://acwebdigital.fr/blog/tendances-web-design-2025-clermont-ferrand.html</loc>
+    <lastmod>2025-03-31T21:28:00+00:00</lastmod>
+  </url>
 </urlset>
