@@ -1,10 +1,306 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <title>Blog - Développeur Web Freelance à Clermont-Ferrand | ACWebDigital</title>
+    <meta name="description"
+          content="Découvrez nos articles et conseils sur le développement web, le SEO et la création de sites internet à Clermont-Ferrand. Expertise locale pour les entreprises du Puy-de-Dôme."/>
+    <link rel="canonical" href="https://www.acwebdigital.fr/blog/"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/global/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/global/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/global/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/global/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/global/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/global/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/global/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/global/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/global/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/global/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/global/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/global/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/global/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/global/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="../browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
+    <!-- OpenGraph / Facebook -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Blog - Développeur Web Freelance Clermont-Ferrand | ACWebDigital"/>
+    <meta property="og:description"
+          content="Découvrez nos articles et conseils sur le développement web, le SEO et la création de sites internet à Clermont-Ferrand."/>
+    <meta property="og:url" content="https://www.acwebdigital.fr/blog/"/>
+    <meta property="og:image" content="https://www.acwebdigital.fr/og-image.png"/>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Blog - Développeur Web Freelance Clermont-Ferrand | ACWebDigital"/>
+    <meta name="twitter:description"
+          content="Découvrez nos articles et conseils sur le développement web, le SEO et la création de sites internet à Clermont-Ferrand."/>
+    <meta name="twitter:image" content="https://www.acwebdigital.fr/og-image.png"/>
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.acwebdigital.fr/sitemap.xml"/>
+
+    <!-- Tailwind + FontAwesome + Cloudflare -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- JSON-LD : Blog -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "headline": "Blog ACWebDigital - Développement Web à Clermont-Ferrand",
+            "description": "Articles et conseils sur le développement web, le SEO et la création de sites internet à Clermont-Ferrand",
+            "url": "https://www.acwebdigital.fr/blog/",
+            "author": {
+                "@type": "Person",
+                "name": "Alexis CARREAU"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "ACWebDigital",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.acwebdigital.fr/logo.png"
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+<!-- Navigation -->
+<nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a class="text-2xl font-bold text-primary" href="../index.html#home">
+            <img class="h-10 w-auto" src="../assets/global/logo_transparent.png" alt="Logo ACWebDigital">
+        </a>
+        <div class="hidden md:flex space-x-8">
+            <a class="hover:text-primary transition" href="../index.html#home">Accueil</a>
+            <a class="hover:text-primary transition" href="../index.html#services">Services</a>
+            <a class="hover:text-primary transition" href="../index.html#about">À propos</a>
+            <a class="hover:text-primary transition" href="./index.html">Blog</a>
+            <a class="hover:text-primary transition" href="../index.html#contact">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none" id="menu-button">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden bg-white w-full" id="mobile-menu">
+        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+            <a class="hover:text-primary transition" href="../index.html#home">Accueil</a>
+            <a class="hover:text-primary transition" href="../index.html#services">Services</a>
+            <a class="hover:text-primary transition" href="../index.html#about">À propos</a>
+            <a class="hover:text-primary transition" href="./index.html/">Blog</a>
+            <a class="hover:text-primary transition" href="../index.html#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Blog Header -->
+<section class="pt-32 pb-10 bg-gradient-to-r from-blue-50 to-blue-100">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Blog ACWebDigital</h1>
+            <p class="text-xl text-gray-600">
+                Conseils, astuces et actualités sur le développement web, le SEO et la création de sites internet à Clermont-Ferrand
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Articles -->
+<section class="py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1">
+                <a href="pourquoi-choisir-developpeur-web-freelance-clermont-ferrand.html" class="block">
+                    <img src="../assets/blog/developpeur-web-freelance-clermont.jpg" alt="Développeur web freelance travaillant sur un projet à Clermont-Ferrand" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-gray-500 mb-2">Publié le 30 mars 2025</div>
+                        <h2 class="text-xl font-bold mb-2 hover:text-primary transition">Pourquoi choisir un développeur web freelance à Clermont-Ferrand ?</h2>
+                        <p class="text-gray-600 mb-4">Découvrez les avantages de faire appel à un développeur web indépendant local pour votre projet digital dans le Puy-de-Dôme.</p>
+                        <div class="flex items-center text-primary">
+                            <span>Lire l'article</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1">
+                <a href="5-etapes-creation-site-web-professionnel-clermont-ferrand.html" class="block">
+                    <img src="../assets/blog/creation-site-web-clermont.jpg" alt="Création de site web à Clermont-Ferrand" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-gray-500 mb-2">Publié le 25 mars 2025</div>
+                        <h2 class="text-xl font-bold mb-2 hover:text-primary transition">5 étapes essentielles pour créer un site web professionnel à Clermont-Ferrand</h2>
+                        <p class="text-gray-600 mb-4">Guide complet pour les entreprises locales souhaitant développer leur présence en ligne avec un site web performant.</p>
+                        <div class="flex items-center text-primary">
+                            <span>Lire l'article</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1">
+                <a href="optimisation-seo-local-clermont-ferrand.html" class="block">
+                    <img src="../assets/blog/seo-local-clermont.jpg" alt="SEO local à Clermont-Ferrand" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-gray-500 mb-2">Publié le 20 mars 2025</div>
+                        <h2 class="text-xl font-bold mb-2 hover:text-primary transition">Comment optimiser votre SEO local à Clermont-Ferrand en 2025</h2>
+                        <p class="text-gray-600 mb-4">Stratégies efficaces pour améliorer votre visibilité dans les recherches locales et attirer plus de clients dans le Puy-de-Dôme.</p>
+                        <div class="flex items-center text-primary">
+                            <span>Lire l'article</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1">
+                <a href="refonte-site-web-entreprise-clermont-ferrand.html" class="block">
+                    <img src="../assets/blog/refonte-site-web-clermont.jpg" alt="Refonte de site web à Clermont-Ferrand" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-gray-500 mb-2">Publié le 15 mars 2025</div>
+                        <h2 class="text-xl font-bold mb-2 hover:text-primary transition">Refonte de site web : quand et pourquoi moderniser votre présence en ligne à Clermont-Ferrand</h2>
+                        <p class="text-gray-600 mb-4">Les signes qui indiquent qu'il est temps de rafraîchir votre site web et comment procéder pour maximiser votre impact digital.</p>
+                        <div class="flex items-center text-primary">
+                            <span>Lire l'article</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1">
+                <a href="avantages-site-web-responsive-clermont-ferrand.html" class="block">
+                    <img src="../assets/blog/site-responsive-clermont.jpg" alt="Site web responsive à Clermont-Ferrand" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-gray-500 mb-2">Publié le 10 mars 2025</div>
+                        <h2 class="text-xl font-bold mb-2 hover:text-primary transition">Les avantages d'un site web responsive pour les entreprises de Clermont-Ferrand</h2>
+                        <p class="text-gray-600 mb-4">Pourquoi l'adaptation mobile est cruciale pour votre business local et comment elle peut augmenter vos conversions.</p>
+                        <div class="flex items-center text-primary">
+                            <span>Lire l'article</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1">
+                <a href="angular-vs-react-meilleur-choix-entreprises-clermont-ferrand.html" class="block">
+                    <img src="../assets/blog/angular-clermont.jpg" alt="Développement Angular à Clermont-Ferrand" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-xs text-gray-500 mb-2">Publié le 5 mars 2025</div>
+                        <h2 class="text-xl font-bold mb-2 hover:text-primary transition">Angular vs React : quel framework choisir pour votre projet web à Clermont-Ferrand</h2>
+                        <p class="text-gray-600 mb-4">Analyse comparative des technologies front-end les plus populaires et conseils pour faire le bon choix selon vos besoins.</p>
+                        <div class="flex items-center text-primary">
+                            <span>Lire l'article</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-16 bg-gradient-to-r from-primary to-blue-700 text-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à développer votre présence en ligne ?</h2>
+            <p class="text-xl mb-8">
+                Discutons de votre projet web et trouvons ensemble la solution idéale pour votre entreprise à Clermont-Ferrand.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="../index.html#contact" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition">
+                    Demander un devis gratuit
+                </a>
+                <a href="tel:+33600000000" class="border-2 border-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-lg transition">
+                    <i class="fas fa-phone mr-2"></i> Appelez-moi
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:ml-2 justify-between items-start">
+            <div class="md:w-2/3 mb-6 md:mb-0">
+                <a class="text-2xl font-bold" href="../">ACWebDigital</a>
+                <p class="mt-2 text-gray-400">Créateur d'expériences web exceptionnelles.</p>
+                <p class="mt-1 text-gray-400">Création de sites internet, SEO, design responsive et accompagnement
+                    digital sur mesure.</p>
+                <p class="mt-1 text-gray-400">
+                    J'interviens auprès des entreprises de l'agglomération clermontoise (Clermont‑Ferrand, Aubière,
+                    Riom, Cournon‑d'Auvergne, Issoire…) ainsi que dans tout le Puy‑de‑Dôme (63).
+                </p>
+            </div>
+            <nav class="md:w-1/3 grid grid-cols-2 gap-4 text-lg">
+                <a class="hover:text-primary transition" href="../index.html#home">Accueil</a>
+                <a class="hover:text-primary transition" href="../index.html#services">Services</a>
+                <a class="hover:text-primary transition" href="../index.html#about">À propos</a>
+                <a class="hover:text-primary transition" href="./index.html">Blog</a>
+                <a class="hover:text-primary transition" href="../index.html#contact">Contact</a>
+                <a class="hover:text-primary transition" href="mailto:alexis.carreau16@gmail.com">Contactez‑moi</a>
+            </nav>
+        </div>
+        <hr class="border-gray-700 my-8"/>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400">© <span id="copyright-year"></span> ACWebDigital. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    document.getElementById('menu-button').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    const mobileLinks = document.querySelectorAll('#mobile-menu a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+    });
+
+    // Manage the year of the website's copyright
+    const now = new Date().getFullYear();
+    const footerCopyrightYear = document.getElementById('copyright-year');
+    footerCopyrightYear.innerText = now.toString();
+</script>
 </body>
 </html>
