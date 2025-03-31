@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script>
+        if (location.hostname === "blog.acwebdigital.fr") {
+            window.location.href = "https://acwebdigital.fr/blog/";
+        }
+    </script>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <title>Alexis CARREAU | Développeur Web Freelance Clermont‑Ferrand</title>
-    <meta name="description" content="Développeur web freelance intervenant auprès des entreprises de Clermont‑Ferrand, Riom, Lyon et Villeurbanne. Création de sites sur mesure, SEO, transition numérique et design responsive."/>
+    <title>Alexis CARREAU, développeur web à Clermont‑Ferrand</title>
+    <meta name="description"
+          content="Développeur web freelance intervenant auprès des entreprises de l'agglomération clermontoise. Création de sites sur mesure, SEO, transition numérique et design responsive."/>
     <link rel="canonical" href="https://www.acwebdigital.fr/"/>
     <meta name="robots" content="index, follow"/>
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/apple-icon-57x57.png">
@@ -19,27 +25,29 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./assets/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
     <link rel="manifest" href="./assets/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/ms-icon-144x144.png">
-    <meta name="msapplication-config" content="./assets/browserconfig.xml">
+    <meta name="msapplication-config" content="./browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <!-- OpenGraph / Facebook -->
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Développeur Web Freelance Clermont‑Ferrand & Lyon | ACWebDigital"/>
-    <meta property="og:description" content="Création de sites web sur mesure, SEO et transition numérique pour artisans, TPE/PME et startups locales."/>
+    <meta property="og:title" content="Développeur Web Freelance Clermont‑Ferrand | ACWebDigital"/>
+    <meta property="og:description"
+          content="Création de sites web sur mesure, SEO et transition numérique pour artisans, TPE/PME et startups locales."/>
     <meta property="og:url" content="https://www.acwebdigital.fr/"/>
     <meta property="og:image" content="https://www.acwebdigital.fr/og-image.png"/>
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Développeur Web Freelance Clermont‑Ferrand & Lyon | ACWebDigital"/>
-    <meta name="twitter:description" content="Création de sites web sur mesure, SEO et transition numérique pour artisans, TPE/PME et startups locales."/>
+    <meta name="twitter:title" content="Développeur Web Freelance Clermont‑Ferrand | ACWebDigital"/>
+    <meta name="twitter:description"
+          content="Création de sites web sur mesure, SEO et transition numérique pour artisans, TPE/PME et startups locales."/>
     <meta name="twitter:image" content="https://www.acwebdigital.fr/og-image.png"/>
 
     <!-- Sitemap -->
@@ -65,32 +73,52 @@
     <!-- JSON‑LD : LocalBusiness -->
     <script type="application/ld+json">
         {
-            "@context":"https://schema.org",
-            "@type":"LocalBusiness",
-            "name":"ACWebDigital",
-            "image":"https://www.acwebdigital.fr/logo.png",
-            "url":"https://www.acwebdigital.fr/",
-            "address":{
-                "@type":"PostalAddress",
-                "streetAddress":"",
-                "addressLocality":"Clermont-Ferrand",
-                "addressRegion":"Auvergne-Rhône-Alpes",
-                "postalCode":"63000",
-                "addressCountry":"FR"
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "ACWebDigital",
+            "image": "https://www.acwebdigital.fr/logo.png",
+            "url": "https://www.acwebdigital.fr/",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "",
+                "addressLocality": "Clermont-Ferrand",
+                "addressRegion": "Auvergne-Rhône-Alpes",
+                "postalCode": "63000",
+                "addressCountry": "FR"
             },
             "areaServed": [
-                { "@type": "Place", "name": "Clermont-Ferrand" },
-                { "@type": "Place", "name": "Riom" },
-                { "@type": "Place", "name": "Cournon-d'Auvergne" },
-                { "@type": "Place", "name": "Chamalières" },
-                { "@type": "Place", "name": "Issoire" },
-                { "@type": "Place", "name": "Lyon" },
-                { "@type": "Place", "name": "Villeurbanne" },
-                { "@type": "Place", "name": "Vénissieux" },
-                { "@type": "Place", "name": "Tassin-la-Demi-Lune" },
-                { "@type": "Place", "name": "Caluire-et-Cuire" },
-                { "@type": "Place", "name": "Puy-de-Dôme" },
-                { "@type": "Place", "name": "Auvergne-Rhône-Alpes" }
+                {
+                    "@type": "Place",
+                    "name": "Clermont-Ferrand"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Riom"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Aubière"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Cournon-d'Auvergne"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Chamalières"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Issoire"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Puy-de-Dôme"
+                },
+                {
+                    "@type": "Place",
+                    "name": "Auvergne-Rhône-Alpes"
+                }
             ]
         }
     </script>
@@ -98,47 +126,47 @@
     <!-- JSON‑LD : FAQPage -->
     <script type="application/ld+json">
         {
-            "@context":"https://schema.org",
-            "@type":"FAQPage",
-            "mainEntity":[
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
                 {
-                    "@type":"Question",
-                    "name":"Comment augmenter le trafic de mon site web à Clermont‑Ferrand ?",
-                    "acceptedAnswer":{
-                        "@type":"Answer",
-                        "text":"Grâce à une refonte optimisée SEO, ACWebDigital améliore la structure technique, les contenus et la performance de votre site pour attirer plus de visiteurs qualifiés depuis Google."
+                    "@type": "Question",
+                    "name": "Comment augmenter le trafic de mon site web à Clermont‑Ferrand ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Grâce à une refonte optimisée SEO, ACWebDigital améliore la structure technique, les contenus et la performance de votre site pour attirer plus de visiteurs qualifiés depuis Google."
                     }
                 },
                 {
-                    "@type":"Question",
-                    "name":"Comment générer plus de leads via mon site internet ?",
-                    "acceptedAnswer":{
-                        "@type":"Answer",
-                        "text":"J’optimise l’expérience utilisateur (UI/UX), les appels à l’action et le référencement naturel pour transformer vos visiteurs en demandes de contact ou rendez‑vous."
+                    "@type": "Question",
+                    "name": "Comment générer plus de leads via mon site internet ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "J’optimise l’expérience utilisateur (UI/UX), les appels à l’action et le référencement naturel pour transformer vos visiteurs en demandes de contact ou rendez‑vous."
                     }
                 },
                 {
-                    "@type":"Question",
-                    "name":"Quel budget prévoir pour la création ou la refonte d’un site web professionnel ?",
-                    "acceptedAnswer":{
-                        "@type":"Answer",
-                        "text":"Le coût dépend de la complexité du projet : N'hésitez pas à contacter ACWebDigital pour un devis personnalisé gratuit."
+                    "@type": "Question",
+                    "name": "Quel budget prévoir pour la création ou la refonte d’un site web professionnel ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Le coût dépend de la complexité du projet : N'hésitez pas à contacter ACWebDigital pour un devis personnalisé gratuit."
                     }
                 },
                 {
-                    "@type":"Question",
-                    "name":"Combien de temps faut‑il pour lancer un nouveau site web ?",
-                    "acceptedAnswer":{
-                        "@type":"Answer",
-                        "text":"En moyenne 3 à 6 semaines, selon la taille et les fonctionnalités souhaitées. J’accompagne chaque client avec un planning clair et des points réguliers."
+                    "@type": "Question",
+                    "name": "Combien de temps faut‑il pour lancer un nouveau site web ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "En moyenne 3 à 6 semaines, selon la taille et les fonctionnalités souhaitées. J’accompagne chaque client avec un planning clair et des points réguliers."
                     }
                 },
                 {
-                    "@type":"Question",
-                    "name":"Pourquoi faire appel à un développeur freelance plutôt qu’une agence ?",
-                    "acceptedAnswer":{
-                        "@type":"Answer",
-                        "text":"En tant que freelance, je propose une relation directe, des tarifs transparents et une flexibilité maximale pour répondre précisément à vos objectifs business."
+                    "@type": "Question",
+                    "name": "Pourquoi faire appel à un développeur freelance plutôt qu’une agence ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "En tant que freelance, je propose une relation directe, des tarifs transparents et une flexibilité maximale pour répondre précisément à vos objectifs business."
                     }
                 }
             ]
@@ -155,7 +183,7 @@
         <div class="hidden md:flex space-x-8">
             <a class="hover:text-primary transition" href="#home">Accueil</a>
             <a class="hover:text-primary transition" href="#services">Services</a>
-<!--            <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
+            <!--            <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
             <a class="hover:text-primary transition" href="#about">À propos</a>
             <a class="hover:text-primary transition" href="#contact">Contact</a>
         </div>
@@ -168,7 +196,7 @@
         <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
             <a class="hover:text-primary transition" href="#home">Accueil</a>
             <a class="hover:text-primary transition" href="#services">Services</a>
-<!--            <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
+            <!--            <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
             <a class="hover:text-primary transition" href="#about">À propos</a>
             <a class="hover:text-primary transition" href="#contact">Contact</a>
         </div>
@@ -191,10 +219,10 @@
                        href="#contact">
                         Discutons de votre projet
                     </a>
-<!--                    <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"-->
-<!--                       href="#work">-->
-<!--                        Voir mes réalisations-->
-<!--                    </a>-->
+                    <!--                    <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"-->
+                    <!--                       href="#work">-->
+                    <!--                        Voir mes réalisations-->
+                    <!--                    </a>-->
                 </div>
             </div>
             <div class="hidden md:block md:w-1/2">
@@ -329,7 +357,8 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Maintenance</h3>
                 <p class="text-gray-600">
-                    Corrections de bugs, ajustements graphiques, mises à jour techniques : je m’occupe de garder votre site performant, à jour et sécurisé dans le temps.
+                    Corrections de bugs, ajustements graphiques, mises à jour techniques : je m’occupe de garder votre
+                    site performant, à jour et sécurisé dans le temps.
                 </p>
             </div>
         </div>
@@ -411,8 +440,8 @@
                     Développeur web diplômé d’un BUT Informatique, j’ai déjà acquis deux ans d’expérience en création de
                     sites web pour différents projets, à la fois personnels et professionnels.
                 </p>
-                <p class="text-gray-600 mb-6">J'interviens principalement à Clermont-Ferrand, dans tout le Puy-de-Dôme
-                    (63) et dans la zone de Lyon. Que vous soyez une TPE, un artisan ou une startup locale, je propose des solutions
+                <p class="text-gray-600 mb-6">J'interviens principalement à Clermont-Ferrand, dans tout le Puy-de-Dôme (63).
+                    Que vous soyez une TPE, un artisan ou une startup locale, je propose des solutions
                     digitales sur mesure et adapté à votre situation.</p>
                 <p class="text-gray-600 mb-6">
                     Aujourd’hui, je mets cette expertise au service de mes clients en tant que freelance, avec une
@@ -683,7 +712,8 @@
                                 Envoyer le message
                             </button>
                         </form>
-                        <div id="success-msg" class="fixed top-16 inset-x-0 mx-auto mt-2 max-w-3xl px-6 py-4 bg-green-50 border-l-4 border-green-500 text-green-700 text-center rounded-lg shadow-lg transition-opacity duration-500 opacity-0 z-20">
+                        <div id="success-msg"
+                             class="fixed top-16 inset-x-0 mx-auto mt-2 max-w-3xl px-6 py-4 bg-green-50 border-l-4 border-green-500 text-green-700 text-center rounded-lg shadow-lg transition-opacity duration-500 opacity-0 z-20">
                             Votre message a bien été envoyé !
                         </div>
                     </div>
@@ -696,12 +726,13 @@
     <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-xl md:text-2xl font-semibold text-dark mb-4">
-                Développeur Web Freelance à Clermont‑Ferrand & Lyon
+                Développeur Web à Clermont‑Ferrand
             </h2>
             <p class="text-gray-600 leading-relaxed">
                 Vous êtes artisan, TPE/PME ou startup de l’agglomération clermontoise
                 ou de la métropole lyonnaise et souhaitez accélérer votre
-                <strong>transition numérique</strong> ? ACWebDigital conçoit des sites web sur mesure, performants et optimisés SEO pour transformer
+                <strong>transition numérique</strong> ? ACWebDigital conçoit des sites web sur mesure, performants et
+                optimisés SEO pour transformer
                 votre présence en ligne en véritable levier de croissance.
             </p>
         </div>
@@ -714,16 +745,17 @@
             <div class="md:w-2/3 mb-6 md:mb-0">
                 <a class="text-2xl font-bold" href="#">ACWebDigital</a>
                 <p class="mt-2 text-gray-400">Créateur d'expériences web exceptionnelles.</p>
-                <p class="mt-1 text-gray-400">Création de sites internet, SEO, design responsive et accompagnement digital sur mesure.</p>
+                <p class="mt-1 text-gray-400">Création de sites internet, SEO, design responsive et accompagnement
+                    digital sur mesure.</p>
                 <p class="mt-1 text-gray-400">
-                    J'interviens auprès des entreprises de l’agglomération clermontoise (Clermont‑Ferrand, Aubière, Riom, Cournon‑d’Auvergne, Issoire…)
-                    et de la métropole lyonnaise (Lyon, Villeurbanne, Vénissieux, Tassin‑la‑Demi‑Lune…) ainsi que dans tout le Puy‑de‑Dôme (63).
+                    J'interviens auprès des entreprises de l’agglomération clermontoise (Clermont‑Ferrand, Aubière,
+                    Riom, Cournon‑d’Auvergne, Issoire…) ainsi que dans tout le Puy‑de‑Dôme (63).
                 </p>
             </div>
             <nav class="md:w-1/3 grid grid-cols-2 gap-4 text-lg">
                 <a class="hover:text-primary transition" href="#home">Accueil</a>
                 <a class="hover:text-primary transition" href="#services">Services</a>
-<!--                <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
+                <!--                <a class="hover:text-primary transition" href="#work">Réalisations</a>-->
                 <a class="hover:text-primary transition" href="#about">À propos</a>
                 <a class="hover:text-primary transition" href="#contact">Contact</a>
                 <a class="hover:text-primary transition" href="mailto:contact@acwebdigital.fr">Contactez‑moi</a>
