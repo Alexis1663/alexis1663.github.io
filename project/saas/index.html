@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOREM | Application Mobile</title>
+    <meta name="description" content="Images gratuites fournies par Unsplash">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./assets/js/main.js"></script>
+</head>
+<body class="font-sans bg-white text-gray-900 antialiased overflow-x-hidden">
+<!-- Navbar -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex items-center justify-between py-4">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">L</span>
+                </div>
+                <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600">LOREM</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-700 hover:text-violet-600 transition-colors">Lorem</a>
+                <a href="#how-it-works" class="text-gray-700 hover:text-violet-600 transition-colors">Ipsum</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-violet-600 transition-colors">Dolor</a>
+                <a href="#pricing" class="text-gray-700 hover:text-violet-600 transition-colors">Sit Amet</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="px-4 py-2 text-violet-600 hover:text-violet-700 transition-colors">Lorem</a>
+                <a href="#" class="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full hover:shadow-lg hover:shadow-violet-200 transition-all">Ipsum</a>
+            </div>
+
+            <button class="md:hidden text-gray-700 hover:text-violet-600 transition-colors" id="mobile-menu-button">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-white border-t border-gray-100 shadow-lg" id="mobile-menu">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex flex-col space-y-4">
+                <a href="#features" class="text-gray-700 hover:text-violet-600 transition-colors py-2">Lorem</a>
+                <a href="#how-it-works" class="text-gray-700 hover:text-violet-600 transition-colors py-2">Ipsum</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-violet-600 transition-colors py-2">Dolor</a>
+                <a href="#pricing" class="text-gray-700 hover:text-violet-600 transition-colors py-2">Sit Amet</a>
+                <div class="flex flex-col space-y-2 pt-2 border-t border-gray-100">
+                    <a href="#" class="px-4 py-2 text-violet-600 hover:text-violet-700 transition-colors text-center">Lorem</a>
+                    <a href="#" class="px-4 py-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full hover:shadow-lg hover:shadow-violet-200 transition-all text-center">Ipsum</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 md:pr-12 mb-12 md:mb-0">
+                <div class="inline-block px-3 py-1 rounded-full bg-violet-100 text-violet-600 font-medium text-sm mb-6">
+            <span class="flex items-center">
+              <span class="w-2 h-2 rounded-full bg-violet-600 mr-2"></span>
+              Lorem ipsum dolor sit
+            </span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Lorem ipsum <span class="bg-clip-text text-transparent bg-gradient-to-r from-violet-600 to-indigo-600">dolor sit amet</span> consectetur
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-lg">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#" class="px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full hover:shadow-lg hover:shadow-violet-200 transition-all text-center font-medium">
+                        Lorem ipsum
+                    </a>
+                    <a href="#" class="px-8 py-4 border border-gray-300 text-gray-700 rounded-full hover:border-violet-600 hover:text-violet-600 transition-all text-center font-medium flex items-center justify-center">
+                        <i class="fas fa-play-circle mr-2 text-violet-600"></i> Dolor sit
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center">
+                    <div class="flex -space-x-2">
+                        <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2.5&w=100&h=100&q=80" alt="Avatar 1" class="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2.5&w=100&h=100&q=80" alt="Avatar 2" class="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2.5&w=100&h=100&q=80" alt="Avatar 3" class="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2.5&w=100&h=100&q=80" alt="Avatar 4" class="w-10 h-10 rounded-full border-2 border-white object-cover" />
+                    </div>
+                    <div class="ml-4">
+                        <div class="flex items-center">
+                            <div class="text-yellow-400 flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="ml-2 font-medium">4.8/5</span>
+                        </div>
+                        <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-violet-600/20 to-indigo-600/20 rounded-full blur-3xl"></div>
+                <div class="relative z-10">
+                    <div class="relative mx-auto w-full max-w-md">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+                            <div class="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-indigo-600/5"></div>
+                            <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6" alt="App Screenshot" class="w-full h-auto object-cover" />
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-white font-medium">Lorem ipsum</h3>
+                                        <p class="text-white/80 text-sm">Dolor sit amet</p>
+                                    </div>
+                                    <button class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                                        <i class="fas fa-play text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 rounded-2xl bg-gradient-to-br from-violet-600 to-indigo-600 shadow-lg transform rotate-12 flex items-center justify-center text-white">
+                            <div class="transform -rotate-12">
+                                <div class="text-2xl font-bold">+80%</div>
+                                <div class="text-xs">Lorem</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Logos Section -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-6">
+        <p class="text-center text-gray-500 mb-8">Lorem ipsum dolor sit amet</p>
+        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+            <div class="w-24 h-12 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fab fa-apple text-4xl"></i>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fab fa-google text-4xl"></i>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fab fa-amazon text-4xl"></i>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fab fa-microsoft text-4xl"></i>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fab fa-slack text-4xl"></i>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
+                <i class="fab fa-spotify text-4xl"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-20 md:py-32">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Lorem ipsum dolor sit amet</h2>
+            <p class="text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 rounded-xl bg-violet-100 flex items-center justify-center mb-6">
+                    <i class="fas fa-bolt text-violet-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Lorem ipsum dolor</h3>
+                <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="text-violet-600 font-medium hover:text-violet-700 transition-colors flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 rounded-xl bg-indigo-100 flex items-center justify-center mb-6">
+                    <i class="fas fa-shield-alt text-indigo-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Dolor sit amet</h3>
+                <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="text-violet-600 font-medium hover:text-violet-700 transition-colors flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                <div class="w-14 h-14 rounded-xl bg-fuchsia-100 flex items-center justify-center mb-6">
+                    <i class="fas fa-chart-line text-fuchsia-600 text-xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Consectetur adipiscing</h3>
+                <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="text-violet-600 font-medium hover:text-violet-700 transition-colors flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-16 text-center">
+            <a href="#" class="inline-flex items-center text-violet-600 font-medium hover:text-violet-700 transition-colors">
+                Lorem ipsum dolor sit amet <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-20 md:py-32 bg-gray-50 overflow-hidden">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Lorem ipsum dolor sit amet</h2>
+            <p class="text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="relative">
+            <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 transform -translate-x-1/2 hidden md:block"></div>
+
+            <div class="space-y-24">
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                        <div class="relative">
+                            <div class="hidden md:block absolute right-0 top-1/2 w-8 h-8 rounded-full bg-violet-600 border-4 border-white transform translate-x-1/2 -translate-y-1/2 z-10"></div>
+                            <div class="bg-white rounded-2xl p-8 shadow-lg relative z-0">
+                                <span class="inline-block px-3 py-1 rounded-full bg-violet-100 text-violet-600 font-medium text-sm mb-4">Lorem 01</span>
+                                <h3 class="text-2xl font-bold mb-4">Lorem ipsum dolor</h3>
+                                <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Consectetur adipiscing elit</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Sed do eiusmod tempor</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12">
+                        <div class="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <img src="https://images.unsplash.com/photo-1586880244406-556ebe35f282" alt="Step 1" class="w-full h-auto object-cover rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pl-12">
+                        <div class="relative">
+                            <div class="hidden md:block absolute left-0 top-1/2 w-8 h-8 rounded-full bg-indigo-600 border-4 border-white transform -translate-x-1/2 -translate-y-1/2 z-10"></div>
+                            <div class="bg-white rounded-2xl p-8 shadow-lg relative z-0">
+                                <span class="inline-block px-3 py-1 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm mb-4">Lorem 02</span>
+                                <h3 class="text-2xl font-bold mb-4">Dolor sit amet</h3>
+                                <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Consectetur adipiscing elit</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Sed do eiusmod tempor</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pr-12">
+                        <div class="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f" alt="Step 2" class="w-full h-auto object-cover rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                        <div class="relative">
+                            <div class="hidden md:block absolute right-0 top-1/2 w-8 h-8 rounded-full bg-fuchsia-600 border-4 border-white transform translate-x-1/2 -translate-y-1/2 z-10"></div>
+                            <div class="bg-white rounded-2xl p-8 shadow-lg relative z-0">
+                                <span class="inline-block px-3 py-1 rounded-full bg-fuchsia-100 text-fuchsia-600 font-medium text-sm mb-4">Lorem 03</span>
+                                <h3 class="text-2xl font-bold mb-4">Consectetur adipiscing</h3>
+                                <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Consectetur adipiscing elit</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                        <span>Sed do eiusmod tempor</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12">
+                        <div class="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <img src="https://images.unsplash.com/photo-1587614203976-365c74645e83?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Step 3" class="w-full h-auto object-cover rounded-lg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-20 md:py-32">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-bold text-violet-600 mb-2">2M+</div>
+                <p class="text-gray-600">Lorem ipsum</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-bold text-indigo-600 mb-2">150+</div>
+                <p class="text-gray-600">Dolor sit</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-bold text-fuchsia-600 mb-2">85%</div>
+                <p class="text-gray-600">Amet consectetur</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl md:text-5xl font-bold text-violet-600 mb-2">24/7</div>
+                <p class="text-gray-600">Adipiscing elit</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 md:py-32 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Lorem ipsum dolor sit amet</h2>
+            <p class="text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="text-yellow-400 flex mb-6">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 mb-8">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Avatar" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                    <div>
+                        <h4 class="font-bold">Lorem Ipsum</h4>
+                        <p class="text-gray-500 text-sm">Dolor Sit Co.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="text-yellow-400 flex mb-6">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-700 mb-8">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Avatar" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                    <div>
+                        <h4 class="font-bold">Dolor Sit</h4>
+                        <p class="text-gray-500 text-sm">Amet Inc.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+                <div class="text-yellow-400 flex mb-6">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text-gray-700 mb-8">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."</p>
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6" alt="Avatar" class="w-12 h-12 rounded-full mr-4 object-cover" />
+                    <div>
+                        <h4 class="font-bold">Consectetur</h4>
+                        <p class="text-gray-500 text-sm">Adipiscing Ltd.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-20 md:py-32">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Lorem ipsum dolor sit amet</h2>
+            <p class="text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Basic Plan -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold mb-2">Lorem</h3>
+                    <p class="text-gray-500 mb-6">Lorem ipsum dolor sit amet</p>
+                    <div class="flex items-center justify-center">
+                        <span class="text-4xl font-bold">$9</span>
+                        <span class="text-gray-500 ml-2">/lorem</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Lorem ipsum dolor sit</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Consectetur adipiscing</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Sed do eiusmod tempor</span>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <i class="fas fa-times mr-3"></i>
+                        <span>Ut enim ad minim veniam</span>
+                    </li>
+                    <li class="flex items-center text-gray-400">
+                        <i class="fas fa-times mr-3"></i>
+                        <span>Quis nostrud exercitation</span>
+                    </li>
+                </ul>
+                <a href="#" class="block w-full py-3 px-4 bg-white border border-gray-300 text-center rounded-lg text-gray-700 font-medium hover:border-violet-600 hover:text-violet-600 transition-colors">
+                    Lorem ipsum
+                </a>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="bg-gradient-to-br from-violet-600 to-indigo-600 rounded-2xl p-8 shadow-xl transform md:scale-105 relative">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+                    Lorem
+                </div>
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold mb-2 text-white">Ipsum</h3>
+                    <p class="text-violet-200 mb-6">Lorem ipsum dolor sit amet</p>
+                    <div class="flex items-center justify-center text-white">
+                        <span class="text-4xl font-bold">$29</span>
+                        <span class="text-violet-200 ml-2">/lorem</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 mb-8 text-white">
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-300 mr-3"></i>
+                        <span>Lorem ipsum dolor sit</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-300 mr-3"></i>
+                        <span>Consectetur adipiscing</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-300 mr-3"></i>
+                        <span>Sed do eiusmod tempor</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-300 mr-3"></i>
+                        <span>Ut enim ad minim veniam</span>
+                    </li>
+                    <li class="flex items-center text-violet-200">
+                        <i class="fas fa-times mr-3"></i>
+                        <span>Quis nostrud exercitation</span>
+                    </li>
+                </ul>
+                <a href="#" class="block w-full py-3 px-4 bg-white text-center rounded-lg text-violet-600 font-medium hover:bg-gray-50 transition-colors">
+                    Lorem ipsum
+                </a>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold mb-2">Dolor</h3>
+                    <p class="text-gray-500 mb-6">Lorem ipsum dolor sit amet</p>
+                    <div class="flex items-center justify-center">
+                        <span class="text-4xl font-bold">$99</span>
+                        <span class="text-gray-500 ml-2">/lorem</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Lorem ipsum dolor sit</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Consectetur adipiscing</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Sed do eiusmod tempor</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Ut enim ad minim veniam</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check text-green-500 mr-3"></i>
+                        <span>Quis nostrud exercitation</span>
+                    </li>
+                </ul>
+                <a href="#" class="block w-full py-3 px-4 bg-white border border-gray-300 text-center rounded-lg text-gray-700 font-medium hover:border-violet-600 hover:text-violet-600 transition-colors">
+                    Lorem ipsum
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 md:py-32 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Lorem ipsum dolor sit amet</h2>
+            <p class="text-xl text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" id="faq-1-button">
+                        <h3 class="text-lg font-bold">Lorem ipsum dolor sit amet?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform" id="faq-1-icon"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-1-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" id="faq-2-button">
+                        <h3 class="text-lg font-bold">Consectetur adipiscing elit?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform" id="faq-2-icon"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-2-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" id="faq-3-button">
+                        <h3 class="text-lg font-bold">Sed do eiusmod tempor incididunt?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform" id="faq-3-icon"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-3-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <button class="flex justify-between items-center w-full text-left" id="faq-4-button">
+                        <h3 class="text-lg font-bold">Ut enim ad minim veniam?</h3>
+                        <i class="fas fa-chevron-down text-gray-400 transition-transform" id="faq-4-icon"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600 hidden" id="faq-4-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 md:py-32 bg-gradient-to-br from-violet-600 to-indigo-600 text-white">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Lorem ipsum dolor sit amet</h2>
+            <p class="text-xl text-violet-200 mb-10 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="px-8 py-4 bg-white text-violet-600 rounded-full hover:bg-gray-100 transition-colors text-center font-medium">
+                    Lorem ipsum
+                </a>
+                <a href="#" class="px-8 py-4 border border-white text-white rounded-full hover:bg-white/10 transition-colors text-center font-medium">
+                    Dolor sit amet
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div>
+                <a href="#" class="flex items-center space-x-2 mb-6">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">L</span>
+                    </div>
+                    <span class="text-xl font-bold text-white">LOREM</span>
+                </a>
+                <p class="text-gray-400 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Lorem</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dolor sit</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amet consectetur</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Adipiscing elit</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Ipsum</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Lorem ipsum</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dolor sit</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Amet consectetur</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Adipiscing elit</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Lorem ipsum</h4>
+                <p class="text-gray-400 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Lorem ipsum" class="px-4 py-2 rounded-l-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-violet-500 text-white flex-grow">
+                    <button type="submit" class="px-4 py-2 bg-violet-600 text-white rounded-r-lg hover:bg-violet-700 transition-colors">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 LOREM. Lorem ipsum dolor sit amet. Photos by <a href="https://unsplash.com" class="text-violet-400 hover:text-white">Unsplash</a>.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Lorem ipsum</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Dolor sit amet</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Consectetur</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#" class="fixed bottom-6 right-6 w-12 h-12 bg-violet-600 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-violet-700 transition-colors z-50 opacity-0 invisible transition-opacity duration-300" id="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+</body>
+</html>

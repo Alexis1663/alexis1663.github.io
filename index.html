@@ -421,8 +421,69 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</section>-->
+
+<!-- Work template exemple -->
+
+<section class="py-16" id="work">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Exemples de sites réalisables</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Voici un aperçu de différents types de sites web que je peux concevoir. Chaque exemple est fictif et vise à illustrer les styles, fonctionnalités et structures que je peux mettre en place pour vos projets.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Portfolio -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                <img
+                        src="assets/project/portfolio.png"
+                        alt="Portfolio Créatif"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Portfolio</h3>
+                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour site vitrine, portfolio ou landing page professionnelle.</p>
+                    <a href="project/portfolio/index.html" target="_blank" class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Voir le projet <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Site E-commerce -->
+            <div class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+                <img
+                        src="assets/project/e-commerce.png"
+                        alt="Nouvelle collection"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">E-commerce</h3>
+                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour un site d'e-commerce professionnelle.</p>
+                    <a href="project/e-commerce/index.html" target="_blank" class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Voir le projet <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- SaaS -->
+            <div class="group relative overflow-hidden rounded-xl shadow-md bg-white">
+                <img
+                        src="assets/project/saas.png"
+                        alt="Nouvelle collection"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">SaaS</h3>
+                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour un site promouvant un SaaS</p>
+                    <a href="project/saas/index.html" target="_blank" class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Voir le projet <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- About Section -->
-<section class="py-16" id="about">
+<section class="py-16 bg-gray-100" id="about">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
@@ -662,7 +723,7 @@
 <!--    </div>-->
 <!--</section>-->
 <!-- Contact Section -->
-<section class="py-16  bg-gray-100" id="contact">
+<section class="py-16" id="contact">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactez-moi</h2>
@@ -717,7 +778,7 @@
         </div>
     </div>
 </section>
-<section class="bg-gray-50 border-t border-gray-200 py-12">
+<section class="bg-gray-100 border-t border-gray-200 py-12 ">
     <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto text-center">
             <h1 class="text-xl md:text-3xl font-semibold text-dark mb-4">
@@ -749,6 +810,7 @@
             </div>
             <nav class="md:w-1/3 grid grid-cols-2 gap-4 text-lg">
                 <a class="hover:text-primary transition" href="./index.html#home">Accueil</a>
+                <a class="hover:text-primary transition" href="./index.html#services">Services</a>
                 <a class="hover:text-primary transition" href="./index.html#services">Services</a>
                 <a class="hover:text-primary transition" href="./index.html#about">À propos</a>
                 <a class="hover:text-primary transition" href="./blog/index.html">Blog</a>

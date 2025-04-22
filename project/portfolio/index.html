@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum | Site Vitrine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="./assets/js/main.js"></script>
+</head>
+<body class="font-sans bg-background text-content antialiased">
+<!-- Navbar -->
+<header class="fixed w-full bg-background/80 backdrop-blur-md z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-primary">
+            <span class="sr-only">Lorem Ipsum</span>
+            <img src="assets/logo.svg" alt="" class="h-8 w-auto"/>
+        </a>
+
+        <div class="hidden md:flex flex-1 justify-center">
+            <nav class="flex space-x-8">
+                <a href="#accueil" class="text-content hover:text-primary transition-colors">Accueil</a>
+                <a href="#services" class="text-content hover:text-primary transition-colors">Services</a>
+                <a href="#portfolio" class="text-content hover:text-primary transition-colors">Portfolio</a>
+                <a href="#temoignages" class="text-content hover:text-primary transition-colors">Témoignages</a>
+                <a href="#contact" class="text-content hover:text-primary transition-colors">Contact</a>
+            </nav>
+        </div>
+
+        <button class="md:hidden text-content hover:text-primary" id="mobile-menu-button">
+            <span class="sr-only">Menu</span>
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+
+        <a href="#contact"
+           class="hidden md:block px-6 py-2 text-content rounded-full hover:text-primary transition-colors border border-gray-200 shadow-sm">
+            Contactez-nous
+        </a>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-background/95 backdrop-blur-md" id="mobile-menu">
+        <div class="container mx-auto px-4  py-4 flex flex-col space-y-4">
+            <a href="#accueil" class="text-content hover:text-primary transition-colors py-2">Accueil</a>
+            <a href="#services" class="text-content hover:text-primary transition-colors py-2">Services</a>
+            <a href="#portfolio" class="text-content hover:text-primary transition-colors py-2">Portfolio</a>
+            <a href="#temoignages" class="text-content hover:text-primary transition-colors py-2">Témoignages</a>
+            <a href="#contact" class="text-content hover:text-primary transition-colors py-2">Contact</a>
+            <a href="#contact"
+               class="px-6 py-2 text-content rounded-full hover:text-primary transition-colors border border-gray-200 shadow-sm text-center">
+                Contactez-nous
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="accueil" class="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-background to-background-light">
+    <div class="container mx-auto px-4 ">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="w-full md:w-[48%] mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    <span class="text-primary">Lorem</span> ipsum dolor sit amet consectetur
+                </h1>
+                <p class="text-lg md:text-xl mb-8 text-content-light max-w-xl">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam
+                    ultricies, nunc nisl aliquet nunc.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact"
+                       class="px-8 py-3 border border-primary text-primary rounded-full hover:bg-primary/10 transition-colors text-center">
+                        Lorem Ipsum
+                    </a>
+                    <a href="#services"
+                       class="px-8 py-3 border border-primary text-primary rounded-full hover:bg-primary/10 transition-colors text-center">
+                        Dolor Sit
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-[48%]">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-primary/20 rounded-2xl blur-xl"></div>
+                    <div class="relative rounded-2xl w-full h-80 shadow-xl bg-gray-200 flex items-center justify-center border border-gray-300">
+                        <i class="fas fa-image text-6xl text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-background">
+    <div class="container mx-auto px-4 ">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Lorem Ipsum</h2>
+            <p class="text-content-light max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam euismod, nisl eget aliquam ultricies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors">
+                    <i class="fas fa-laptop-code text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Lorem Ipsum</h3>
+                <p class="text-content-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies.</p>
+                <a href="#contact"
+                   class="text-primary hover:text-primary-dark transition-colors inline-flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors">
+                    <i class="fas fa-paint-brush text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Dolor Sit</h3>
+                <p class="text-content-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies.</p>
+                <a href="#contact"
+                   class="text-primary hover:text-primary-dark transition-colors inline-flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors">
+                    <i class="fas fa-mobile-alt text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Amet Consectetur</h3>
+                <p class="text-content-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies.</p>
+                <a href="#contact"
+                   class="text-primary hover:text-primary-dark transition-colors inline-flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors">
+                    <i class="fas fa-search text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Adipiscing Elit</h3>
+                <p class="text-content-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies.</p>
+                <a href="#contact"
+                   class="text-primary hover:text-primary-dark transition-colors inline-flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors">
+                    <i class="fas fa-shopping-cart text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Nullam Euismod</h3>
+                <p class="text-content-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies.</p>
+                <a href="#contact"
+                   class="text-primary hover:text-primary-dark transition-colors inline-flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow group">
+                <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/30 transition-colors">
+                    <i class="fas fa-server text-2xl text-primary"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Nisl Eget</h3>
+                <p class="text-content-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies.</p>
+                <a href="#contact"
+                   class="text-primary hover:text-primary-dark transition-colors inline-flex items-center">
+                    Lorem ipsum <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-background-light">
+    <div class="container mx-auto px-4 ">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Lorem Ipsum</h2>
+            <p class="text-content-light max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam euismod, nisl eget aliquam ultricies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                <div class="w-full h-64 bg-gray-200 flex items-center justify-center border border-gray-300 transition-transform duration-500 group-hover:scale-110">
+                    <i class="fas fa-image text-4xl text-gray-400"></i>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Lorem Ipsum</h3>
+                    <p class="text-white/80 mb-4">Lorem ipsum dolor sit amet</p>
+                    <a href="#"
+                       class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Lorem ipsum <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                <div class="w-full h-64 bg-gray-200 flex items-center justify-center border border-gray-300 transition-transform duration-500 group-hover:scale-110">
+                    <i class="fas fa-image text-4xl text-gray-400"></i>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Dolor Sit</h3>
+                    <p class="text-white/80 mb-4">Consectetur adipiscing elit</p>
+                    <a href="#"
+                       class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Lorem ipsum <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                <div class="w-full h-64 bg-gray-200 flex items-center justify-center border border-gray-300 transition-transform duration-500 group-hover:scale-110">
+                    <i class="fas fa-image text-4xl text-gray-400"></i>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Amet Consectetur</h3>
+                    <p class="text-white/80 mb-4">Nullam euismod nisl eget</p>
+                    <a href="#"
+                       class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Lorem ipsum <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                <div class="w-full h-64 bg-gray-200 flex items-center justify-center border border-gray-300 transition-transform duration-500 group-hover:scale-110">
+                    <i class="fas fa-image text-4xl text-gray-400"></i>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Adipiscing Elit</h3>
+                    <p class="text-white/80 mb-4">Aliquam ultricies nunc</p>
+                    <a href="#"
+                       class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Lorem ipsum <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                <div class="w-full h-64 bg-gray-200 flex items-center justify-center border border-gray-300 transition-transform duration-500 group-hover:scale-110">
+                    <i class="fas fa-image text-4xl text-gray-400"></i>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Nullam Euismod</h3>
+                    <p class="text-white/80 mb-4">Nisl eget aliquam ultricies</p>
+                    <a href="#"
+                       class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Lorem ipsum <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                <div class="w-full h-64 bg-gray-200 flex items-center justify-center border border-gray-300 transition-transform duration-500 group-hover:scale-110">
+                    <i class="fas fa-image text-4xl text-gray-400"></i>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Nisl Eget</h3>
+                    <p class="text-white/80 mb-4">Aliquam ultricies nunc</p>
+                    <a href="#"
+                       class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
+                        Lorem ipsum <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#contact"
+               class="px-8 py-3 bg-primary text-black rounded-full hover:bg-primary-dark transition-colors inline-block border border-gray-200 shadow-sm">
+                Lorem ipsum dolor
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="temoignages" class="py-20 bg-background">
+    <div class="container mx-auto px-4 ">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Lorem Ipsum</h2>
+            <p class="text-content-light max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam euismod, nisl eget aliquam ultricies.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4 bg-gray-200 flex items-center justify-center border border-gray-300">
+                        <i class="fas fa-user text-gray-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Lorem Ipsum</h4>
+                        <p class="text-content-light text-sm">Dolor Sit, Amet Co.</p>
+                    </div>
+                </div>
+                <div class="mb-4 text-primary">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-content-light italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc."</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4 bg-gray-200 flex items-center justify-center border border-gray-300">
+                        <i class="fas fa-user text-gray-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Dolor Sit</h4>
+                        <p class="text-content-light text-sm">Amet Co., Consectetur</p>
+                    </div>
+                </div>
+                <div class="mb-4 text-primary">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-content-light italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc."</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-background-light p-8 rounded-2xl shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 rounded-full overflow-hidden mr-4 bg-gray-200 flex items-center justify-center border border-gray-300">
+                        <i class="fas fa-user text-gray-400"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Amet Consectetur</h4>
+                        <p class="text-content-light text-sm">Adipiscing, Elit Inc.</p>
+                    </div>
+                </div>
+                <div class="mb-4 text-primary">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text-content-light italic">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies, nunc nisl aliquet nunc."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-background-light">
+    <div class="container mx-auto px-4 ">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Lorem Ipsum</h2>
+            <p class="text-content-light max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam euismod, nisl eget aliquam ultricies.</p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-1/2">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium">Lorem</label>
+                            <input type="text" id="name"
+                                   class="w-full px-4 py-3 rounded-lg bg-background border border-content/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
+                                   placeholder="Lorem ipsum">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium">Ipsum</label>
+                            <input type="email" id="email"
+                                   class="w-full px-4 py-3 rounded-lg bg-background border border-content/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
+                                   placeholder="lorem@ipsum.com">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium">Dolor</label>
+                        <input type="text" id="subject"
+                               class="w-full px-4 py-3 rounded-lg bg-background border border-content/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
+                               placeholder="Lorem ipsum dolor">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block mb-2 text-sm font-medium">Sit Amet</label>
+                        <textarea id="message" rows="5"
+                                  class="w-full px-4 py-3 rounded-lg bg-background border border-content/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors"
+                                  placeholder="Lorem ipsum dolor sit amet"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="px-8 py-3 bg-primary text-black rounded-full hover:bg-primary-dark transition-colors border border-gray-200 shadow-sm">
+                        Lorem Ipsum
+                    </button>
+                </form>
+            </div>
+
+            <div class="lg:w-1/2">
+                <div class="bg-background p-8 rounded-2xl shadow-lg h-full">
+                    <h3 class="text-2xl font-bold mb-6">Lorem Ipsum</h3>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Lorem</h4>
+                                <p class="text-content-light">123 Lorem Ipsum, Dolor 12345, Sit Amet</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Ipsum</h4>
+                                <p class="text-content-light">+12 345 678 90</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Dolor</h4>
+                                <p class="text-content-light">lorem@ipsum.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Sit Amet</h4>
+                                <p class="text-content-light">Lorem - Ipsum: 9h00 - 18h00</p>
+                                <p class="text-content-light">Dolor - Sit: Amet</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Lorem Ipsum</h4>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                               class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+                                <i class="fab fa-facebook-f text-primary"></i>
+                            </a>
+                            <a href="#"
+                               class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+                                <i class="fab fa-twitter text-primary"></i>
+                            </a>
+                            <a href="#"
+                               class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+                                <i class="fab fa-instagram text-primary"></i>
+                            </a>
+                            <a href="#"
+                               class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center hover:bg-primary/30 transition-colors">
+                                <i class="fab fa-linkedin-in text-primary"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-background py-12">
+    <div class="container mx-auto px-4 ">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div>
+                <a href="#" class="text-2xl font-bold text-primary mb-6 inline-block">
+                    <span class="sr-only">Lorem Ipsum</span>
+                    <img src="assets/logo.svg" alt="" class="h-8 w-auto"/>
+                </a>
+                <p class="text-content-light mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    euismod, nisl eget aliquam ultricies.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-content-light hover:text-primary transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-content-light hover:text-primary transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-content-light hover:text-primary transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-content-light hover:text-primary transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Lorem Ipsum</h4>
+                <ul class="space-y-3">
+                    <li><a href="#accueil" class="text-content-light hover:text-primary transition-colors">Lorem</a>
+                    </li>
+                    <li><a href="#services" class="text-content-light hover:text-primary transition-colors">Ipsum</a>
+                    </li>
+                    <li><a href="#portfolio" class="text-content-light hover:text-primary transition-colors">Dolor</a>
+                    </li>
+                    <li><a href="#temoignages" class="text-content-light hover:text-primary transition-colors">Sit</a>
+                    </li>
+                    <li><a href="#contact" class="text-content-light hover:text-primary transition-colors">Amet</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Dolor Sit</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-content-light hover:text-primary transition-colors">Lorem Ipsum</a></li>
+                    <li><a href="#" class="text-content-light hover:text-primary transition-colors">Dolor Sit</a></li>
+                    <li><a href="#" class="text-content-light hover:text-primary transition-colors">Amet Consectetur</a>
+                    </li>
+                    <li><a href="#" class="text-content-light hover:text-primary transition-colors">Adipiscing Elit</a>
+                    </li>
+                    <li><a href="#" class="text-content-light hover:text-primary transition-colors">Nullam Euismod</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6">Amet Consectetur</h4>
+                <p class="text-content-light mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <form class="flex">
+                    <input type="email" placeholder="lorem@ipsum.com"
+                           class="px-4 py-2 rounded-l-lg bg-background-light border border-content/20 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors flex-grow">
+                    <button type="submit"
+                            class="px-4 py-2 bg-primary text-black rounded-r-lg hover:bg-primary-dark transition-colors border-y border-r border-gray-200">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="border-t border-content/10 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-content-light text-sm mb-4 md:mb-0">&copy; 2025 Lorem Ipsum. Dolor sit amet.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-content-light hover:text-primary transition-colors text-sm">Lorem</a>
+                    <a href="#" class="text-content-light hover:text-primary transition-colors text-sm">Ipsum</a>
+                    <a href="#" class="text-content-light hover:text-primary transition-colors text-sm">Dolor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#accueil"
+   class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-black rounded-full flex items-center justify-center shadow-lg hover:bg-primary-dark transition-colors z-50 opacity-0 invisible transition-opacity duration-300 border border-gray-200"
+   id="back-to-top">
+    <span class="sr-only">Retour en haut</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+</a>
+</body>
+</html>
