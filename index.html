@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    <title>Alexis CARREAU, développeur web à Clermont‑Ferrand</title>
+    <title>Développement Web Clermont-Ferrand | ACWebDigital – Création & Refonte de Sites</title>
     <meta name="description"
-          content="Développeur web freelance intervenant auprès des entreprises de l'agglomération clermontoise. Création de sites sur mesure, SEO, transition numérique et design responsive."/>
-    <link rel="canonical" href="https://www.acwebdigital.fr/"/>
+          content="Développeur web freelance à Clermont-Ferrand spécialisé en création de sites internet, refonte web et référencement local. Solutions sur mesure pour entreprises auvergnates."/>
+    <link rel="canonical" href="https://acwebdigital.fr/"/>
     <meta name="robots" content="index, follow"/>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/global/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/global/apple-icon-60x60.png">
@@ -32,21 +31,21 @@
 
     <!-- OpenGraph / Facebook -->
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Développeur Web Freelance Clermont‑Ferrand | ACWebDigital"/>
+    <meta property="og:title" content="Développement Web Clermont-Ferrand | ACWebDigital – Création & Refonte"/>
     <meta property="og:description"
-          content="Création de sites web sur mesure, SEO et transition numérique pour artisans, TPE/PME et startups locales."/>
-    <meta property="og:url" content="https://www.acwebdigital.fr/"/>
-    <meta property="og:image" content="https://www.acwebdigital.fr/og-image.png"/>
+          content="Création de sites web sur mesure, refonte et SEO local pour entreprises à Clermont-Ferrand et en Auvergne. Développeur web freelance."/>
+    <meta property="og:url" content="https://acwebdigital.fr/"/>
+    <meta property="og:image" content="https://acwebdigital.fr/og-image.png"/>
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Développeur Web Freelance Clermont‑Ferrand | ACWebDigital"/>
+    <meta name="twitter:title" content="Développement Web Clermont-Ferrand | ACWebDigital – Création & Refonte"/>
     <meta name="twitter:description"
-          content="Création de sites web sur mesure, SEO et transition numérique pour artisans, TPE/PME et startups locales."/>
-    <meta name="twitter:image" content="https://www.acwebdigital.fr/og-image.png"/>
+          content="Création de sites web sur mesure, refonte et SEO local pour entreprises à Clermont-Ferrand et en Auvergne. Développeur web freelance."/>
+    <meta name="twitter:image" content="https://acwebdigital.fr/og-image.png"/>
 
     <!-- Sitemap -->
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.acwebdigital.fr/sitemap.xml"/>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://acwebdigital.fr/sitemap.xml"/>
 
     <!-- Tailwind + FontAwesome + Cloudflare -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -71,16 +70,25 @@
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "ACWebDigital",
-            "image": "https://www.acwebdigital.fr/logo.png",
-            "url": "https://www.acwebdigital.fr/",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "",
-                "addressLocality": "Clermont-Ferrand",
-                "addressRegion": "Auvergne-Rhône-Alpes",
-                "postalCode": "63000",
-                "addressCountry": "FR"
+            "alternateName": "AC Web Digital",
+            "description": "Développeur web freelance à Clermont-Ferrand spécialisé en création de sites internet, refonte web et référencement local pour entreprises auvergnates.",
+            "image": "https://acwebdigital.fr/logo.png",
+            "url": "https://acwebdigital.fr/",
+            "email": "alexis.carreau16@gmail.com",
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "45.777222",
+                "longitude": "3.087025"
             },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                }
+            ],
+            "priceRange": "€€",
             "areaServed": [
                 {
                     "@type": "Place",
@@ -118,6 +126,40 @@
         }
     </script>
 
+    <!-- JSON-LD : BreadcrumbList -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Accueil",
+                    "item": "https://acwebdigital.fr/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://acwebdigital.fr/#services"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "À propos",
+                    "item": "https://acwebdigital.fr/#about"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Contact",
+                    "item": "https://acwebdigital.fr/#contact"
+                }
+            ]
+        }
+    </script>
+
     <!-- JSON‑LD : FAQPage -->
     <script type="application/ld+json">
         {
@@ -137,12 +179,12 @@
                     "name": "Comment générer plus de leads via mon site internet ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "J’optimise l’expérience utilisateur (UI/UX), les appels à l’action et le référencement naturel pour transformer vos visiteurs en demandes de contact ou rendez‑vous."
+                        "text": "J'optimise l'expérience utilisateur (UI/UX), les appels à l'action et le référencement naturel pour transformer vos visiteurs en demandes de contact ou rendez‑vous."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "Quel budget prévoir pour la création ou la refonte d’un site web professionnel ?",
+                    "name": "Quel budget prévoir pour la création ou la refonte d'un site web professionnel ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "Le coût dépend de la complexité du projet : N'hésitez pas à contacter ACWebDigital pour un devis personnalisé gratuit."
@@ -153,27 +195,46 @@
                     "name": "Combien de temps faut‑il pour lancer un nouveau site web ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "En moyenne 3 à 6 semaines, selon la taille et les fonctionnalités souhaitées. J’accompagne chaque client avec un planning clair et des points réguliers."
+                        "text": "En moyenne 3 à 6 semaines, selon la taille et les fonctionnalités souhaitées. J'accompagne chaque client avec un planning clair et des points réguliers."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "Pourquoi faire appel à un développeur freelance plutôt qu’une agence ?",
+                    "name": "Pourquoi faire appel à un développeur freelance plutôt qu'une agence ?",
                     "acceptedAnswer": {
                         "@type": "Answer",
                         "text": "En tant que freelance, je propose une relation directe, des tarifs transparents et une flexibilité maximale pour répondre précisément à vos objectifs business."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Quels types de sites web créez-vous à Clermont-Ferrand ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Je développe tous types de sites web : vitrines professionnelles, e-commerce, portfolios, blogs et applications web sur mesure pour les entreprises de Clermont-Ferrand et du Puy-de-Dôme."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Proposez-vous des services de maintenance pour les sites web existants ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui, ACWebDigital propose des services de maintenance web complets incluant mises à jour de sécurité, corrections de bugs, sauvegardes régulières et améliorations continues pour les entreprises de Clermont-Ferrand."
                     }
                 }
             ]
         }
     </script>
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="bg-gray-50 text-gray-800 overflow-x-hidden">
 <!-- Navigation -->
 <nav class="bg-white shadow-md fixed w-full z-10">
     <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-        <a class="text-2xl font-bold text-primary" href="../">
-            <img class="h-10 w-auto" src="./assets/global/logo_transparent.png" alt="Logo ACWebDigital">
+        <a class="text-2xl font-bold text-primary" href="/" aria-label="ACWebDigital - Développeur web à Clermont-Ferrand">
+            <img class="h-10 w-auto" src="./assets/global/logo_transparent.png" alt="Logo ACWebDigital - Développement web Clermont-Ferrand">
         </a>
         <div class="hidden md:flex space-x-8">
             <a class="hover:text-primary transition" href="#home">Accueil</a>
@@ -182,7 +243,7 @@
             <a class="hover:text-primary transition" href="./blog/index.html">Blog</a>
             <a class="hover:text-primary transition" href="#contact">Contact</a>
         </div>
-        <button class="md:hidden focus:outline-none" id="menu-button">
+        <button class="md:hidden focus:outline-none" id="menu-button" aria-label="Menu">
             <i class="fas fa-bars text-2xl"></i>
         </button>
     </div>
@@ -197,27 +258,38 @@
         </div>
     </div>
 </nav>
+
+<!-- Breadcrumb -->
+<div class="container mx-auto px-6 pt-24 pb-2">
+    <nav class="text-sm text-gray-500" aria-label="Fil d'Ariane">
+        <ol class="list-none p-0 inline-flex">
+            <li class="flex items-center">
+                <a href="./index.html" class="hover:text-primary">Accueil</a>
+                <span class="mx-2">/</span>
+            </li>
+            <li class="flex items-center">
+                <span>Développement Web Clermont-Ferrand</span>
+            </li>
+        </ol>
+    </nav>
+</div>
+
 <!-- Hero Section -->
-<section class="pt-24 md:pt-32 pb-16 md:pb-24" id="home">
+<section class="pt-8 md:pt-16 pb-16 md:pb-24" id="home">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    Créateur d'<span class="text-primary">Expériences</span> Digitales
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Développement Web Freelance à Clermont-Ferrand
                 </h1>
                 <p class="text-xl text-gray-600 mb-8">
-                    Développeur web full-stack spécialisé dans la création de sites web performants, esthétiques et
-                    parfaitement adaptés à vos objectifs commerciaux.
+                    Développeur web full-stack spécialisé dans la <strong>création de sites internet</strong> et <strong>refonte web</strong> pour entreprises à Clermont-Ferrand. Solutions digitales performantes, esthétiques et parfaitement adaptées à vos objectifs commerciaux.
                 </p>
                 <div class="flex space-x-4">
                     <a class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition"
                        href="#contact">
                         Discutons de votre projet
                     </a>
-                    <!--                    <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"-->
-                    <!--                       href="#work">-->
-                    <!--                        Voir mes réalisations-->
-                    <!--                    </a>-->
                 </div>
             </div>
             <div class="hidden md:block md:w-1/2">
@@ -226,7 +298,7 @@
                     <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-blob animation-delay-2000"></div>
                     <div class="relative h-full w-full flex items-center justify-center">
                         <!-- SVG épuré pour la page d'accueil -->
-                        <svg class="w-full h-full" viewbox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-full h-full" viewbox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                             <!-- Écran d'ordinateur -->
                             <rect fill="#f0f0f0" height="200" rx="10" stroke="#3b82f6" stroke-width="2" width="300"
                                   x="250" y="150"></rect>
@@ -268,13 +340,25 @@
         </div>
     </div>
 </section>
+
+<!-- Introduction Section -->
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Bienvenue chez <strong>ACWebDigital</strong>, votre <strong>développeur web freelance à Clermont-Ferrand</strong>. Je conçois des <strong>sites internet sur mesure</strong> pour les entreprises, artisans et commerces du Puy-de-Dôme. Spécialisé dans la <strong>création de sites vitrines</strong>, <strong>e-commerce</strong> et <strong>applications web</strong>, je propose des solutions digitales adaptées aux besoins spécifiques des entreprises auvergnates. Mon approche combine <strong>design responsive</strong>, <strong>optimisation SEO locale</strong> et <strong>expérience utilisateur intuitive</strong> pour maximiser votre visibilité en ligne et convertir vos visiteurs en clients.
+            </p>
+        </div>
+    </div>
+</section>
+
 <!-- Services Section -->
 <section class="py-16 bg-gray-100" id="services">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Mes Services</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos Services : création de site & refonte à Clermont-Ferrand</h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-                Des solutions digitales sur mesure pour propulser votre entreprise et maximiser votre impact en ligne.
+                Des solutions digitales sur mesure pour propulser votre entreprise et maximiser votre impact en ligne dans la région clermontoise.
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -282,20 +366,20 @@
                 <div class="text-primary text-4xl mb-4">
                     <i class="fas fa-code"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Développement Web</h3>
+                <h3 class="text-xl font-bold mb-3">Création de Site Internet</h3>
                 <p class="text-gray-600">
                     Sites web sur mesure développés avec un code propre et optimisé pour garantir performance, sécurité
-                    et évolutivité.
+                    et évolutivité pour les entreprises de Clermont-Ferrand.
                 </p>
             </div>
             <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
                 <div class="text-primary text-4xl mb-4">
                     <i class="fas fa-search"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Référencement SEO</h3>
+                <h3 class="text-xl font-bold mb-3">Référencement SEO Local</h3>
                 <p class="text-gray-600">
-                    Optimisation technique et stratégique pour améliorer votre visibilité sur Google et attirer un
-                    trafic qualifié.
+                    Optimisation technique et stratégique pour améliorer votre visibilité sur Google à Clermont-Ferrand et attirer un
+                    trafic qualifié dans toute l'Auvergne.
                 </p>
             </div>
             <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
@@ -305,27 +389,9 @@
                 <h3 class="text-xl font-bold mb-3">Design Responsive</h3>
                 <p class="text-gray-600">
                     Sites parfaitement adaptés à tous les appareils, offrant une expérience utilisateur optimale du
-                    smartphone à l'ordinateur.
+                    smartphone à l'ordinateur pour vos clients clermontois.
                 </p>
             </div>
-            <!--            <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">-->
-            <!--                <div class="text-primary text-4xl mb-4">-->
-            <!--                    <i class="fas fa-shopping-cart"></i>-->
-            <!--                </div>-->
-            <!--                <h3 class="text-xl font-bold mb-3">E-Commerce</h3>-->
-            <!--                <p class="text-gray-600">-->
-            <!--                    Boutiques en ligne performantes avec paiement sécurisé, gestion des stocks et interface intuitive pour booster vos ventes.-->
-            <!--                </p>-->
-            <!--            </div>-->
-            <!--            <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">-->
-            <!--                <div class="text-primary text-4xl mb-4">-->
-            <!--                    <i class="fas fa-server"></i>-->
-            <!--                </div>-->
-            <!--                <h3 class="text-xl font-bold mb-3">Hébergement & Maintenance</h3>-->
-            <!--                <p class="text-gray-600">-->
-            <!--                    Solutions d'hébergement fiables et maintenance proactive pour garantir la sécurité et les performances de votre site.-->
-            <!--                </p>-->
-            <!--            </div>-->
             <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
                 <div class="text-primary text-4xl mb-4">
                     <i class="fas fa-magnifying-glass-chart"></i>
@@ -333,103 +399,40 @@
                 <h3 class="text-xl font-bold mb-3">Audit de Site Web</h3>
                 <p class="text-gray-600">
                     Analyse complète de votre site : vitesse, SEO, accessibilité, design et expérience utilisateur.
-                    Recevez un rapport clair et des recommandations concrètes.
+                    Recevez un rapport clair et des recommandations concrètes pour votre entreprise à Clermont-Ferrand.
                 </p>
             </div>
             <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
                 <div class="text-primary text-4xl mb-4">
                     <i class="fas fa-pencil-alt"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                <h3 class="text-xl font-bold mb-3">Refonte de Site Internet</h3>
                 <p class="text-gray-600">
-                    Interfaces élégantes et intuitives centrées sur l'utilisateur pour maximiser les conversions et
-                    fidéliser vos visiteurs.
+                    Modernisation complète de votre site existant avec interfaces élégantes et intuitives centrées sur l'utilisateur pour maximiser les conversions et
+                    fidéliser vos visiteurs auvergnats.
                 </p>
             </div>
             <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
                 <div class="text-primary text-4xl mb-4">
                     <i class="fas fa-tools"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Maintenance</h3>
+                <h3 class="text-xl font-bold mb-3">Maintenance Web</h3>
                 <p class="text-gray-600">
-                    Corrections de bugs, ajustements graphiques, mises à jour techniques : je m’occupe de garder votre
-                    site performant, à jour et sécurisé dans le temps.
+                    Corrections de bugs, ajustements graphiques, mises à jour techniques : je m'occupe de garder votre
+                    site performant, à jour et sécurisé dans le temps pour votre entreprise à Clermont-Ferrand.
                 </p>
             </div>
         </div>
     </div>
 </section>
+
 <!-- Work Section -->
-<!--<section class="py-16" id="work">-->
-<!--    <div class="container mx-auto px-6">-->
-<!--        <div class="text-center mb-16">-->
-<!--            <h2 class="text-3xl md:text-4xl font-bold mb-4">Réalisations Récentes</h2>-->
-<!--            <p class="text-gray-600 max-w-2xl mx-auto">-->
-<!--                Découvrez comment j'ai aidé mes clients à transformer leur présence en ligne et atteindre leurs-->
-<!--                objectifs commerciaux.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">-->
-<!--            &lt;!&ndash; Project 1 &ndash;&gt;-->
-<!--            <div class="group">-->
-<!--                <div class="relative overflow-hidden rounded-lg shadow-md">-->
-<!--                    <img alt="Site E-Commerce"-->
-<!--                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"-->
-<!--                         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80"/>-->
-<!--                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">-->
-<!--                        <h3 class="text-white text-xl font-bold">Site E-Commerce</h3>-->
-<!--                        <p class="text-gray-200 mt-2">Boutique en ligne avec filtrage avancé et paiement sécurisé. +45%-->
-<!--                            de taux de conversion.</p>-->
-<!--                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Project 2 &ndash;&gt;-->
-<!--            <div class="group">-->
-<!--                <div class="relative overflow-hidden rounded-lg shadow-md">-->
-<!--                    <img alt="Site de Restaurant"-->
-<!--                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"-->
-<!--                         src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80"/>-->
-<!--                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">-->
-<!--                        <h3 class="text-white text-xl font-bold">Site de Restaurant</h3>-->
-<!--                        <p class="text-gray-200 mt-2">Site responsive avec système de réservation en ligne. +60% de-->
-<!--                            réservations mensuelles.</p>-->
-<!--                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; Project 3 &ndash;&gt;-->
-<!--            <div class="group">-->
-<!--                <div class="relative overflow-hidden rounded-lg shadow-md">-->
-<!--                    <img alt="Portfolio Photographe"-->
-<!--                         class="w-full h-64 object-cover transition duration-500 group-hover:scale-110"-->
-<!--                         src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1974&amp;q=80"/>-->
-<!--                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">-->
-<!--                        <h3 class="text-white text-xl font-bold">Portfolio Photographe</h3>-->
-<!--                        <p class="text-gray-200 mt-2">Portfolio créatif avec galerie interactive et formulaire de-->
-<!--                            contact. +120% de demandes clients.</p>-->
-<!--                        <a class="text-primary mt-4 inline-block" href="#">Voir le projet</a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="text-center mt-12">-->
-<!--            <a class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition"-->
-<!--               href="#">-->
-<!--                Voir tous les projets-->
-<!--            </a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
-<!-- Work template exemple -->
-
 <section class="py-16" id="work">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Exemples de sites réalisables</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Exemples de sites réalisables à Clermont-Ferrand</h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-                Voici un aperçu de différents types de sites web que je peux concevoir. Chaque exemple est fictif et vise à illustrer les styles, fonctionnalités et structures que je peux mettre en place pour vos projets.
+                Voici un aperçu de différents types de sites web que je peux concevoir pour votre entreprise à Clermont-Ferrand. Chaque exemple illustre les styles, fonctionnalités et structures que je peux mettre en place pour vos projets.
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -437,12 +440,13 @@
             <div class="group relative overflow-hidden rounded-2xl shadow-lg">
                 <img
                         src="assets/project/portfolio.png"
-                        alt="Portfolio Créatif"
+                        alt="Exemple de portfolio pour entreprise à Clermont-Ferrand"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                        loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                    <h3 class="text-white text-xl font-bold mb-2">Portfolio</h3>
-                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour site vitrine, portfolio ou landing page professionnelle.</p>
+                    <h3 class="text-white text-xl font-bold mb-2">Site Vitrine Professionnel</h3>
+                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour site vitrine, portfolio ou landing page professionnelle pour entreprises à Clermont-Ferrand.</p>
                     <a href="project/portfolio/index.html" target="_blank" class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
                         Voir le projet <i class="fas fa-external-link-alt ml-2 text-sm"></i>
                     </a>
@@ -452,12 +456,13 @@
             <div class="group relative overflow-hidden rounded-xl shadow-md bg-white">
                 <img
                         src="assets/project/e-commerce.png"
-                        alt="Nouvelle collection"
+                        alt="Exemple de site e-commerce pour entreprise à Clermont-Ferrand"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <h3 class="text-white text-xl font-bold mb-2">E-commerce</h3>
-                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour un site d'e-commerce professionnelle.</p>
+                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour un site d'e-commerce professionnel à Clermont-Ferrand.</p>
                     <a href="project/e-commerce/index.html" target="_blank" class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
                         Voir le projet <i class="fas fa-external-link-alt ml-2 text-sm"></i>
                     </a>
@@ -467,12 +472,13 @@
             <div class="group relative overflow-hidden rounded-xl shadow-md bg-white">
                 <img
                         src="assets/project/saas.png"
-                        alt="Nouvelle collection"
+                        alt="Exemple de site SaaS pour entreprise à Clermont-Ferrand"
                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <h3 class="text-white text-xl font-bold mb-2">SaaS</h3>
-                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour un site promouvant un SaaS</p>
+                    <p class="text-white/80 mb-4">Exemple de mise en page moderne pour un site promouvant un SaaS à Clermont-Ferrand</p>
                     <a href="project/saas/index.html" target="_blank" class="text-primary bg-white/10 backdrop-blur-md px-4 py-2 rounded-full inline-flex items-center w-fit hover:bg-white/20 transition-colors">
                         Voir le projet <i class="fas fa-external-link-alt ml-2 text-sm"></i>
                     </a>
@@ -487,20 +493,20 @@
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
-                <img loading="lazy" alt="À propos de moi" class="rounded-lg shadow-lg mx-auto w-full max-w-md"
+                <img loading="lazy" alt="Alexis CARREAU, développeur web à Clermont-Ferrand" class="rounded-lg shadow-lg mx-auto w-full max-w-md"
                      src="assets/global/about.webp"/>
             </div>
             <div class="md:w-1/2 md:pl-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">À Propos de Moi</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">À Propos d'ACWebDigital</h2>
                 <p class="text-gray-600 mb-6">
-                    Développeur web diplômé d’un BUT Informatique, j’ai déjà acquis deux ans d’expérience en création de
-                    sites web pour différents projets, à la fois personnels et professionnels.
+                    Développeur web diplômé d'un BUT Informatique, j'ai déjà acquis deux ans d'expérience en <strong>création de
+                    sites web</strong> pour différents projets à <strong>Clermont-Ferrand</strong>, à la fois personnels et professionnels.
                 </p>
-                <p class="text-gray-600 mb-6">J'interviens principalement à Clermont-Ferrand, dans tout le Puy-de-Dôme (63).
+                <p class="text-gray-600 mb-6">J'interviens principalement à <strong>Clermont-Ferrand</strong>, dans tout le <strong>Puy-de-Dôme (63)</strong>.
                     Que vous soyez une TPE, un artisan ou une startup locale, je propose des solutions
-                    digitales sur mesure et adapté à votre situation.</p>
+                    digitales sur mesure et adaptées à votre situation.</p>
                 <p class="text-gray-600 mb-6">
-                    Aujourd’hui, je mets cette expertise au service de mes clients en tant que freelance, avec une
+                    Aujourd'hui, je mets cette expertise au service de mes clients en tant que <strong>freelance à Clermont-Ferrand</strong>, avec une
                     approche sérieuse, moderne et orientée résultats. Mon objectif : vous livrer un site fiable,
                     performant et pensé pour vos utilisateurs.
                 </p>
@@ -550,185 +556,72 @@
         </div>
     </div>
 </section>
-<!-- Testimonials Section with Carousel -->
-<!--<section class="py-16">-->
-<!--    <div class="container mx-auto px-6">-->
-<!--        <div class="text-center mb-16">-->
-<!--            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ce que disent mes clients</h2>-->
-<!--            <p class="text-gray-600 max-w-2xl mx-auto">-->
-<!--                Ne vous fiez pas seulement à mes paroles. Découvrez comment mes solutions ont transformé l'activité de-->
-<!--                mes clients.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--        &lt;!&ndash; Modern Carousel &ndash;&gt;-->
-<!--        <div class="flex justify-center">-->
-<!--            <div class="relative mx-auto w-[90%:bug: fix CD auto:bug: fix CD auto]">-->
-<!--                &lt;!&ndash; Carousel Controls - Now positioned outside the carousel &ndash;&gt;-->
-<!--                <button class="hidden md:absolute md:top-1/2 md:-left-12 md:-translate-y-1/2 md:bg-white md:text-primary md:w-10 md:h-10 md:rounded-full md:shadow-md md:flex md:items-center md:justify-center md:focus:outline-none md:hover:bg-primary md:hover:text-white md:transition md:z-10"-->
-<!--                        id="prev-btn">-->
-<!--                    <i class="fas fa-chevron-left"></i>-->
-<!--                </button>-->
-<!--                <div class="testimonial-carousel overflow-hidden">-->
-<!--                    <div class="testimonial-track flex transition-transform duration-500 ease-out">-->
-<!--                        &lt;!&ndash; Testimonial 1 &ndash;&gt;-->
-<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
-<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
-<!--                                <div class="text-yellow-400 flex mb-4">-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                </div>-->
-<!--                                <p class="text-gray-600 mb-6 italic">-->
-<!--                                    "Travailler avec ce développeur a été un vrai plaisir. Notre boutique en ligne a été-->
-<!--                                    livrée dans les délais et le budget, avec des résultats qui ont dépassé toutes nos-->
-<!--                                    attentes. Notre chiffre d'affaires a augmenté de 35% dès le premier mois !"-->
-<!--                                </p>-->
-<!--                                <div class="flex items-center mt-auto">-->
-<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
-<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
-<!--                                             src="https://randomuser.me/api/portraits/women/44.jpg"/>-->
-<!--                                    </div>-->
-<!--                                    <div>-->
-<!--                                        <h4 class="font-bold">Sarah Dupont</h4>-->
-<!--                                        <p class="text-gray-500 text-sm">PDG, Boutique Mode</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash; Testimonial 2 &ndash;&gt;-->
-<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
-<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
-<!--                                <div class="text-yellow-400 flex mb-4">-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                </div>-->
-<!--                                <p class="text-gray-600 mb-6 italic">-->
-<!--                                    "Le trafic de notre site a augmenté de 150% après la refonte. L'attention aux détails et-->
-<!--                                    l'accent mis sur l'expérience utilisateur ont vraiment porté leurs fruits. Notre taux de-->
-<!--                                    conversion a doublé en seulement deux mois !"-->
-<!--                                </p>-->
-<!--                                <div class="flex items-center mt-auto">-->
-<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
-<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
-<!--                                             src="https://randomuser.me/api/portraits/men/32.jpg"/>-->
-<!--                                    </div>-->
-<!--                                    <div>-->
-<!--                                        <h4 class="font-bold">Michel Rodriguez</h4>-->
-<!--                                        <p class="text-gray-500 text-sm">Directeur Marketing, Startup Tech</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash; Testimonial 3 &ndash;&gt;-->
-<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
-<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
-<!--                                <div class="text-yellow-400 flex mb-4">-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                </div>-->
-<!--                                <p class="text-gray-600 mb-6 italic">-->
-<!--                                    "Non seulement il a créé un site magnifique, mais il a pris le temps de comprendre nos-->
-<!--                                    objectifs commerciaux pour concevoir une solution qui nous aide à les atteindre. Nos-->
-<!--                                    réservations en ligne ont triplé depuis le lancement !"-->
-<!--                                </p>-->
-<!--                                <div class="flex items-center mt-auto">-->
-<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
-<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
-<!--                                             src="https://randomuser.me/api/portraits/women/68.jpg"/>-->
-<!--                                    </div>-->
-<!--                                    <div>-->
-<!--                                        <h4 class="font-bold">Émilie Chen</h4>-->
-<!--                                        <p class="text-gray-500 text-sm">Propriétaire, Restaurant Local</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash; Testimonial 4 &ndash;&gt;-->
-<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
-<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
-<!--                                <div class="text-yellow-400 flex mb-4">-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                </div>-->
-<!--                                <div class="flex flex-col justify-between">-->
 
-<!--                                </div>-->
-<!--                                <p class="text-gray-600 mb-6 italic">-->
-<!--                                    "L'expertise en design responsive a garanti que notre site soit parfait sur tous les-->
-<!--                                    appareils. Nous avons reçu de nombreux compliments sur l'expérience utilisateur et notre-->
-<!--                                    taux de rebond a diminué de 40% !"-->
-<!--                                </p>-->
-<!--                                <div class="flex items-center mt-auto">-->
-<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
-<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
-<!--                                             src="https://randomuser.me/api/portraits/men/75.jpg"/>-->
-<!--                                    </div>-->
-<!--                                    <div>-->
-<!--                                        <h4 class="font-bold">David Wilson</h4>-->
-<!--                                        <p class="text-gray-500 text-sm">Fondateur, Agence Digitale</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        &lt;!&ndash; Testimonial 5 &ndash;&gt;-->
-<!--                        <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] p-4">-->
-<!--                            <div class="bg-white p-8 rounded-lg shadow-md h-full transform transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg">-->
-<!--                                <div class="text-yellow-400 flex mb-4">-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                    <i class="fas fa-star"></i>-->
-<!--                                </div>-->
-<!--                                <p class="text-gray-600 mb-6 italic">-->
-<!--                                    "Collaborer avec ce développeur a transformé notre présence en ligne. Il a été réactif,-->
-<!--                                    professionnel, et a livré exactement ce dont nous avions besoin. Notre visibilité sur-->
-<!--                                    Google s'est améliorée de 200% !"-->
-<!--                                </p>-->
-<!--                                <div class="flex items-center mt-auto">-->
-<!--                                    <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mr-4">-->
-<!--                                        <img alt="Client" class="w-full h-full object-cover"-->
-<!--                                             src="https://randomuser.me/api/portraits/women/90.jpg"/>-->
-<!--                                    </div>-->
-<!--                                    <div>-->
-<!--                                        <h4 class="font-bold">Jessica Martinez</h4>-->
-<!--                                        <p class="text-gray-500 text-sm">Directrice, Santé &amp; Bien-être</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <button class="hidden md:absolute md:top-1/2 md:-right-12 md:-translate-y-1/2 md:bg-white md:text-primary md:w-10 md:h-10 md:rounded-full md:shadow-md md:flex md:items-center md:justify-center md:focus:outline-none md:hover:bg-primary md:hover:text-white md:transition md:z-10"-->
-<!--                        id="next-btn">-->
-<!--                    <i class="fas fa-chevron-right"></i>-->
-<!--                </button>-->
-<!--                &lt;!&ndash; Carousel Indicators &ndash;&gt;-->
-<!--                <div class="flex justify-center mt-8 space-x-2" id="carousel-indicators">-->
-<!--                    &lt;!&ndash; Indicators will be added by JavaScript &ndash;&gt;-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
+<!-- FAQ Section -->
+<section class="py-16 bg-white" id="faq">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Questions fréquentes sur la création web à Clermont-Ferrand</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Retrouvez les réponses aux questions les plus courantes sur mes services de développement web à Clermont-Ferrand.
+            </p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-6">
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Comment augmenter le trafic de mon site web à Clermont‑Ferrand ?</h3>
+                    <p class="text-gray-600">
+                        Grâce à une refonte optimisée SEO, ACWebDigital améliore la structure technique, les contenus et la performance de votre site pour attirer plus de visiteurs qualifiés depuis Google. Je mets en place une stratégie de référencement local ciblant spécifiquement Clermont-Ferrand et sa région.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Comment générer plus de leads via mon site internet ?</h3>
+                    <p class="text-gray-600">
+                        J'optimise l'expérience utilisateur (UI/UX), les appels à l'action et le référencement naturel pour transformer vos visiteurs en demandes de contact ou rendez‑vous. Chaque élément de votre site est conçu pour maximiser les conversions.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Quel budget prévoir pour la création ou la refonte d'un site web professionnel ?</h3>
+                    <p class="text-gray-600">
+                        Le coût dépend de la complexité du projet : N'hésitez pas à contacter ACWebDigital pour un devis personnalisé gratuit. Je propose des solutions adaptées à tous les budgets pour les entreprises de Clermont-Ferrand.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Combien de temps faut‑il pour lancer un nouveau site web ?</h3>
+                    <p class="text-gray-600">
+                        En moyenne 3 à 6 semaines, selon la taille et les fonctionnalités souhaitées. J'accompagne chaque client avec un planning clair et des points réguliers pour garantir le respect des délais.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Pourquoi faire appel à un développeur freelance plutôt qu'une agence ?</h3>
+                    <p class="text-gray-600">
+                        En tant que freelance à Clermont-Ferrand, je propose une relation directe, des tarifs transparents et une flexibilité maximale pour répondre précisément à vos objectifs business. Vous travaillez directement avec le développeur, sans intermédiaires.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Quels types de sites web créez-vous à Clermont-Ferrand ?</h3>
+                    <p class="text-gray-600">
+                        Je développe tous types de sites web : vitrines professionnelles, e-commerce, portfolios, blogs et applications web sur mesure pour les entreprises de Clermont-Ferrand et du Puy-de-Dôme.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Proposez-vous des services de maintenance pour les sites web existants ?</h3>
+                    <p class="text-gray-600">
+                        Oui, ACWebDigital propose des services de maintenance web complets incluant mises à jour de sécurité, corrections de bugs et améliorations continues pour les entreprises de Clermont-Ferrand.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Contact Section -->
 <section class="py-16" id="contact">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactez-moi</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactez votre développeur web à Clermont-Ferrand</h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-                Vous avez un projet en tête ou vous souhaitez discuter de la façon dont je peux aider votre entreprise ?
+                Vous avez un projet de création de site internet à Clermont-Ferrand ou vous souhaitez discuter de la façon dont je peux aider votre entreprise ?
                 Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.
             </p>
         </div>
@@ -740,28 +633,28 @@
                             <div class="mb-6">
                                 <label class="block text-gray-700" for="lastname">Nom</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                                       id="lastname" name="lastname" type="text"/>
+                                       id="lastname" name="lastname" type="text" required aria-required="true"/>
                             </div>
                             <div class="mb-6">
                                 <label class="block text-gray-700" for="firstname">Prénom</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                                       id="firstname" name="firstname" type="text"/>
+                                       id="firstname" name="firstname" type="text" required aria-required="true"/>
                             </div>
                             <div class="mb-6">
                                 <label class="block text-gray-700" for="email">Email</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                                       id="email" name="email" type="email"/>
+                                       id="email" name="email" type="email" required aria-required="true"/>
                             </div>
                             <div class="mb-6">
                                 <label class="block text-gray-700" for="subject">Sujet</label>
                                 <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                                       id="subject" name="subject" type="text"/>
+                                       id="subject" name="subject" type="text" required aria-required="true"/>
                             </div>
                             <div class="mb-6">
                                 <label class="block text-gray-700" for="message">Votre Message</label>
                                 <textarea
                                         class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-                                        id="message" name="message" rows="4"></textarea>
+                                        id="message" name="message" rows="4" required aria-required="true"></textarea>
                             </div>
                             <button class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition w-full"
                                     type="submit">
@@ -778,40 +671,44 @@
         </div>
     </div>
 </section>
-<section class="bg-gray-100 border-t border-gray-200 py-12 ">
+
+<!-- Local Business Section -->
+<section class="bg-gray-100 border-t border-gray-200 py-12">
     <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-xl md:text-3xl font-semibold text-dark mb-4">
-                Développeur Web à Clermont‑Ferrand
-            </h1>
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-semibold text-dark mb-4 text-center">
+                Développeur Web à Clermont‑Ferrand pour votre entreprise locale
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                Vous êtes artisan, TPE/PME ou startup de l'agglomération clermontoise et souhaitez accélérer votre
+                <strong>transition numérique</strong> ? ACWebDigital conçoit des <strong>sites web sur mesure</strong>, performants et
+                optimisés SEO pour transformer votre présence en ligne en véritable levier de croissance.
+            </p>
             <p class="text-gray-600 leading-relaxed">
-                Vous êtes artisan, TPE/PME ou startup de l’agglomération clermontoise et souhaitez accélérer votre
-                <strong>transition numérique</strong> ? ACWebDigital conçoit des sites web sur mesure, performants et
-                optimisés SEO pour transformer
-                votre présence en ligne en véritable levier de croissance.
+                En tant que <strong>développeur web freelance à Clermont-Ferrand</strong>, je comprends les enjeux spécifiques des entreprises locales. Que vous soyez situé en centre-ville, à Montferrand, Aubière, Chamalières ou ailleurs dans le <strong>Puy-de-Dôme</strong>, je vous propose des solutions digitales adaptées à votre marché local et à vos objectifs commerciaux.
             </p>
         </div>
     </div>
 </section>
-<!-- Footer -->
+
 <!-- Footer -->
 <footer class="bg-dark text-white py-12">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row md:ml-2 justify-between items-start">
             <div class="md:w-2/3 mb-6 md:mb-0">
-                <a class="text-2xl font-bold" href="../">ACWebDigital</a>
-                <p class="mt-2 text-gray-400">Créateur d'expériences web exceptionnelles.</p>
-                <p class="mt-1 text-gray-400">Création de sites internet, SEO, design responsive et accompagnement
+                <a class="text-2xl font-bold" href="/">ACWebDigital</a>
+                <p class="mt-2 text-gray-400">Créateur d'expériences web exceptionnelles à Clermont-Ferrand.</p>
+                <p class="mt-1 text-gray-400"><strong>Création de sites internet</strong>, <strong>SEO</strong>, <strong>design responsive</strong> et accompagnement
                     digital sur mesure.</p>
                 <p class="mt-1 text-gray-400">
-                    J'interviens auprès des entreprises de l'agglomération clermontoise (Clermont‑Ferrand, Aubière,
-                    Riom, Cournon‑d'Auvergne, Issoire…) ainsi que dans tout le Puy‑de‑Dôme (63).
+                    J'interviens auprès des entreprises de l'agglomération clermontoise (<strong>Clermont‑Ferrand</strong>, <strong>Aubière</strong>,
+                    <strong>Riom</strong>, <strong>Cournon‑d'Auvergne</strong>, <strong>Issoire</strong>…) ainsi que dans tout le <strong>Puy‑de‑Dôme (63)</strong>.
                 </p>
             </div>
             <nav class="md:w-1/3 grid grid-cols-2 gap-4 text-lg">
                 <a class="hover:text-primary transition" href="./index.html#home">Accueil</a>
                 <a class="hover:text-primary transition" href="./index.html#services">Services</a>
-                <a class="hover:text-primary transition" href="./index.html#services">Services</a>
+                <a class="hover:text-primary transition" href="./index.html#work">Réalisations</a>
                 <a class="hover:text-primary transition" href="./index.html#about">À propos</a>
                 <a class="hover:text-primary transition" href="./blog/index.html">Blog</a>
                 <a class="hover:text-primary transition" href="./index.html#contact">Contact</a>
@@ -870,146 +767,10 @@
             </style>
         `);
 
-    // Testimonial Carousel
-    document.addEventListener('DOMContentLoaded', function () {
-        // const track = document.querySelector('.testimonial-track');
-        // const slides = document.querySelectorAll('.testimonial-slide');
-        // const nextButton = document.getElementById('next-btn');
-        // const prevButton = document.getElementById('prev-btn');
-        // const indicatorsContainer = document.getElementById('carousel-indicators');
-        //
-        // let currentIndex = 0;
-        // let slideWidth;
-        // let slidesToShow;
-        // let totalPages;
-        //
-        // // Calculate slides to show based on screen size
-        // function calculateSlidesToShow() {
-        //     if (window.innerWidth >= 1024) {
-        //         return 3; // Large screens
-        //     } else if (window.innerWidth >= 768) {
-        //         return 2; // Medium screens
-        //     } else {
-        //         return 1; // Small screens
-        //     }
-        // }
-        //
-        // // Initialize carousel
-        // function initCarousel() {
-        //     slidesToShow = calculateSlidesToShow();
-        //     slideWidth = 100 / slidesToShow;
-        //     totalPages = Math.ceil((slides.length - slidesToShow + 1) / 1);
-        //
-        //     // Set width of slides
-        //     slides.forEach(slide => {
-        //         slide.style.minWidth = `${slideWidth}%`;
-        //     });
-        //
-        //     // Clear existing indicators
-        //     indicatorsContainer.innerHTML = '';
-        //
-        //     // Create indicators based on total pages
-        //     for (let i = 0; i < totalPages; i++) {
-        //         const indicator = document.createElement('button');
-        //         indicator.classList.add('w-3', 'h-3', 'rounded-full', 'bg-gray-300');
-        //         indicator.setAttribute('aria-label', `Go to slide ${i + 1}`);
-        //         indicator.addEventListener('click', () => goToSlide(i));
-        //         indicatorsContainer.appendChild(indicator);
-        //     }
-        //
-        //     goToSlide(0);
-        // }
-        //
-        // // Go to specific slide
-        // function goToSlide(index) {
-        //     if (index < 0) {
-        //         index = totalPages - 1;
-        //     } else if (index >= totalPages) {
-        //         index = 0;
-        //     }
-        //
-        //     currentIndex = index;
-        //     const offset = -currentIndex * slideWidth;
-        //     track.style.transform = `translateX(${offset}%)`;
-        //     updateIndicators();
-        // }
-        //
-        // // Set active indicator
-        // function updateIndicators() {
-        //     const indicators = indicatorsContainer.querySelectorAll('button');
-        //     indicators.forEach((indicator, index) => {
-        //         if (index === currentIndex) {
-        //             indicator.classList.remove('bg-gray-300');
-        //             indicator.classList.add('bg-primary');
-        //         } else {
-        //             indicator.classList.remove('bg-primary');
-        //             indicator.classList.add('bg-gray-300');
-        //         }
-        //     });
-        // }
-        //
-        // // Event listeners
-        // nextButton.addEventListener('click', () => goToSlide(currentIndex + 1));
-        // prevButton.addEventListener('click', () => goToSlide(currentIndex - 1));
-        //
-        // // Handle touch events for mobile swipe
-        // let touchStartX = 0;
-        // let touchEndX = 0;
-        //
-        // track.addEventListener('touchstart', e => {
-        //     touchStartX = e.changedTouches[0].screenX;
-        // });
-        //
-        // track.addEventListener('touchend', e => {
-        //     touchEndX = e.changedTouches[0].screenX;
-        //     handleSwipe();
-        // });
-        //
-        // function handleSwipe() {
-        //     const swipeThreshold = 50;
-        //     if (touchEndX < touchStartX - swipeThreshold) {
-        //         // Swipe left
-        //         goToSlide(currentIndex + 1);
-        //     } else if (touchEndX > touchStartX + swipeThreshold) {
-        //         // Swipe right
-        //         goToSlide(currentIndex - 1);
-        //     }
-        // }
-        //
-        // // Auto-advance slides
-        // let autoplayInterval;
-        //
-        // function startAutoplay() {
-        //     autoplayInterval = setInterval(() => {
-        //         goToSlide(currentIndex + 1);
-        //     }, 5000);
-        // }
-        //
-        // function stopAutoplay() {
-        //     clearInterval(autoplayInterval);
-        // }
-        //
-        // // Pause autoplay on hover
-        // const carousel = document.querySelector('.testimonial-carousel');
-        // carousel.addEventListener('mouseenter', stopAutoplay);
-        // carousel.addEventListener('mouseleave', startAutoplay);
-        //
-        // // Initialize carousel and start autoplay
-        // initCarousel();
-        // startAutoplay();
-        //
-        // // Recalculate on window resize
-        // window.addEventListener('resize', () => {
-        //     stopAutoplay();
-        //     initCarousel();
-        //     startAutoplay();
-        // });
-
-        // Manage the year of the website's copyright
-        const now = new Date().getFullYear();
-        const footerCopyrightYear = document.getElementById('copyright-year');
-        footerCopyrightYear.innerText = now.toString();
-    });
+    // Manage the year of the website's copyright
+    const now = new Date().getFullYear();
+    const footerCopyrightYear = document.getElementById('copyright-year');
+    footerCopyrightYear.innerText = now.toString();
 
     // Gestion du formulair de contact
     (function () {
